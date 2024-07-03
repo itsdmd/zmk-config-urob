@@ -212,6 +212,18 @@
             tapping-term-ms = <170>;
             flavor = "tap-preferred";
         };
+
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <170>;
+            require-prior-idle-ms = <250>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -220,11 +232,11 @@
         layer_base_hrm {
             display-name = "base-hrm";
             bindings = <
-&kp_kp_ht GRAVE ESC  &kp LS(N1)           &email_1 0 LS(N2)     &kp LS(N3)         &kp LS(N4)          &kp LS(N5)                                   &kp LS(N6)   &kp LS(N7)          &kp LS(N8)         &kp UNDER         &kp LS(N0)           &capw_ht CAPS 0
-&kp TAB              &kp Q                &kp W                 &kp F              &kp P               &kp G                                        &kp J        &kp L               &kp U              &kp Y             &kp SEMI             &kp_kp_ht LBRC LBKT
-&kp BSPC             &kp_kp_ht500 LGUI A  &kp_kp_ht LEFT_ALT R  &kp_kp_ht LCTRL S  &kp_kp_ht LSHIFT T  &kp D                                        &kp H        &kp_kp_ht LSHIFT N  &kp_kp_ht RCTRL E  &kp_kp_ht RALT I  &kp_kp_ht500 LGUI O  &kp APOS
-&kp PG_UP            &kp Z                &kp X                 &kp C              &kp V               &kp B        &kp C_MUTE    &kp C_PLAY_PAUSE  &kp K        &kp M               &kp COMMA          &kp DOT           &kp FSLH             &kp PG_DN
-                                          &to 6                 &kp LALT           &kp LCTRL           &lt 2 ENTER  &S_CS_td      &C_CA_td          &lt 3 SPACE  &kp LGUI            &to 4              &to 1
+&kp_kp_ht GRAVE ESC  &kp LS(N1)           &email_1 0 LS(N2)  &kp LS(N3)    &kp LS(N4)     &kp LS(N5)                                   &kp LS(N6)   &kp LS(N7)     &kp LS(N8)    &kp UNDER    &kp LS(N0)           &capw_ht CAPS 0
+&kp TAB              &kp Q                &kp W              &kp F         &kp P          &kp G                                        &kp J        &kp L          &kp U         &kp Y        &kp SEMI             &kp_kp_ht LBRC LBKT
+&kp BSPC             &kp_kp_ht500 LGUI A  &hrm LEFT_ALT R    &hrm LCTRL S  &hrm LSHIFT T  &kp D                                        &kp H        &hrm LSHIFT N  &hrm RCTRL E  &hrm RALT I  &kp_kp_ht500 LGUI O  &kp APOS
+&kp PG_UP            &kp Z                &kp X              &kp C         &kp V          &kp B        &kp C_MUTE    &kp C_PLAY_PAUSE  &kp K        &kp M          &kp COMMA     &kp DOT      &kp FSLH             &kp PG_DN
+                                          &to 6              &kp LALT      &kp LCTRL      &lt 2 ENTER  &S_CS_td      &C_CA_td          &lt 3 SPACE  &kp LGUI       &to 4         &to 1
             >;
 
             sensor-bindings =
