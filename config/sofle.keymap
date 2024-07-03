@@ -206,6 +206,14 @@
             require-prior-idle-ms = <170>;
             slow-release;
         };
+
+        combo_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <25 34>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <250>;
+            slow-release;
+        };
     };
 
     macros {
