@@ -1,5 +1,5 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1000  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 1    // 10
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 2    // 10
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
@@ -12,7 +12,7 @@
 
 &msc {
   acceleration-exponent = <0>;      // 0
-  time-to-max-speed-ms = <3000>;    // 500
+  time-to-max-speed-ms = <1000>;    // 500
   delay-ms = <0>;                   // 10
 };
 
