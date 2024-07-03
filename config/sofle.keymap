@@ -20,9 +20,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_to_qwerty {
+        combo_to_qwerty_l {
             bindings = <&to 4>;
-            key-positions = <15 14>;
+            key-positions = <1 2>;
             slow-release;
             timeout-ms = <250>;
             layers = <0 1 2 3 5 6>;
@@ -37,34 +37,34 @@
             require-prior-idle-ms = <1000>;
         };
 
-        combo_to_exxa {
+        combo_to_exxa_l {
             bindings = <&to 6>;
-            key-positions = <20 15>;
+            key-positions = <3 2>;
             timeout-ms = <250>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
 
-        combo_to_base_hrm {
+        combo_to_base_hrm_l {
             bindings = <&to 0>;
-            key-positions = <19 16>;
+            key-positions = <4 3>;
             timeout-ms = <250>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
 
-        combo_to_qwerty_mir {
+        combo_to_qwerty_mir_l {
             bindings = <&to 5>;
-            key-positions = <15 14>;
+            key-positions = <1 2>;
             slow-release;
             timeout-ms = <250>;
             layers = <4>;
             require-prior-idle-ms = <1000>;
         };
 
-        combo_to_base_normal {
+        combo_to_base_normal_l {
             bindings = <&to 1>;
-            key-positions = <21 14>;
+            key-positions = <4 2>;
             timeout-ms = <250>;
             slow-release;
             require-prior-idle-ms = <300>;
@@ -80,7 +80,7 @@
 
         combo_to_symbols {
             bindings = <&to 2>;
-            key-positions = <14 15 16>;
+            key-positions = <2 3 4>;
             slow-release;
             timeout-ms = <250>;
             require-prior-idle-ms = <300>;
@@ -88,9 +88,51 @@
 
         combo_to_symbols_alt {
             bindings = <&to 3>;
-            key-positions = <19 21 20>;
+            key-positions = <7 8 9>;
             slow-release;
             timeout-ms = <250>;
+            require-prior-idle-ms = <300>;
+        };
+
+        combo_to_qwerty_r {
+            bindings = <&to 4>;
+            key-positions = <9 10>;
+            timeout-ms = <250>;
+            slow-release;
+            require-prior-idle-ms = <300>;
+            layers = <0 1 2 3 5 6>;
+        };
+
+        combo_to_exxa_r {
+            bindings = <&to 6>;
+            key-positions = <9 8>;
+            timeout-ms = <250>;
+            slow-release;
+            require-prior-idle-ms = <300>;
+        };
+
+        combo_to_base_hrm_r {
+            bindings = <&to 0>;
+            key-positions = <8 7>;
+            timeout-ms = <250>;
+            slow-release;
+            require-prior-idle-ms = <300>;
+        };
+
+        combo_to_qwerty_mir_r {
+            bindings = <&to 5>;
+            key-positions = <10 9>;
+            timeout-ms = <250>;
+            slow-release;
+            require-prior-idle-ms = <1000>;
+            layers = <4>;
+        };
+
+        combo_to_base_normal_r {
+            bindings = <&to 1>;
+            key-positions = <7 9>;
+            timeout-ms = <250>;
+            slow-release;
             require-prior-idle-ms = <300>;
         };
     };
