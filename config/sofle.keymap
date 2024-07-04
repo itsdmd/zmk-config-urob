@@ -347,7 +347,7 @@
 
         combo_fslh {
             bindings = <&kp FSLH>;
-            key-positions = <15 20>;
+            key-positions = <16 19>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <170>;
@@ -356,7 +356,7 @@
 
         combo_bslh {
             bindings = <&kp BSLH>;
-            key-positions = <14 21>;
+            key-positions = <15 20>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <170>;
@@ -365,11 +365,29 @@
 
         combo_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <13 22>;
+            key-positions = <21 14>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <170>;
             layers = <0 1 4>;
+        };
+
+        combo_qmark {
+            bindings = <&kp QMARK>;
+            key-positions = <13 22>;
+            timeout-ms = <170>;
+            slow-release;
+            require-prior-idle-ms = <170>;
+            layers = <0 1 4>;
+        };
+
+        combo_capsw {
+            bindings = <&caps_word>;
+            key-positions = <28 31>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <170>;
+            slow-release;
+            layers = <0>;
         };
 
         combo_equal {
@@ -379,15 +397,6 @@
             slow-release;
             require-prior-idle-ms = <170>;
             layers = <0 1 4>;
-        };
-
-        combo_capsw {
-            bindings = <&caps_word>;
-            key-positions = <28 31>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0>;
         };
     };
 
