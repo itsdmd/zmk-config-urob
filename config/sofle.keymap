@@ -38,7 +38,7 @@
         };
 
         combo_to_exxa_l {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <38 39>;
             timeout-ms = <250>;
             slow-release;
@@ -78,8 +78,8 @@
             require-prior-idle-ms = <1000>;
         };
 
-        combo_to_symbols_l {
-            bindings = <&to 5>;
+        combo_to_extended_l {
+            bindings = <&to 4>;
             key-positions = <4 2 3>;
             slow-release;
             timeout-ms = <250>;
@@ -96,7 +96,7 @@
         };
 
         combo_to_exxa_r {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <46 47>;
             timeout-ms = <250>;
             slow-release;
@@ -200,8 +200,8 @@
             slow-release;
         };
 
-        combo_to_symbols_r {
-            bindings = <&to 5>;
+        combo_to_extended_r {
+            bindings = <&to 4>;
             key-positions = <7 8 9>;
             timeout-ms = <250>;
             slow-release;
