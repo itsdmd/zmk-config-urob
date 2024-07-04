@@ -506,7 +506,7 @@
 &kp LA(F4)         &kp_kp_ht F13 F1           &kp_kp_ht F14 F2     &kp_kp_ht F15 F3     &kp_kp_ht F16 F4     &kp_kp_ht F17 F5                                                      &kp_kp_ht F18 F6        &kp_kp_ht F19 F7    &kp_kp_ht F20 F8       &kp_kp_ht F21 F9  &kp_kp_ht F22 F10     &kp PSCRN
 &macro_two_spaces  &kp ESC                    &kp_kp_ht LS(N1) N1  &kp_kp_ht LS(N2) N2  &kp_kp_ht LS(N3) N3  &kp_kp_ht F23 F11                                                     &kp_kp_ht F24 F12       &plus_equal 0 PLUS  &kp_kp_ht UNDER MINUS  &kp ASTRK         &kp_kp_ht QMARK FSLH  &kp_kp_ht RBRC RBKT
 &kp DEL            &kp_kp_ht LS(N0) N0        &kp_kp_ht LS(N4) N4  &kp_kp_ht LS(N5) N5  &kp_kp_ht LS(N6) N6  &kp EQUAL                                                             &kp HOME                &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
-&kp PG_DN          &kp_kp_ht LS(GRAVE) GRAVE  &kp_kp_ht LS(N7) N7  &kp_kp_ht LS(N8) N8  &kp_kp_ht LS(N9) N9  &kp INS                 &kp C_AL_CALC         &kp C_AL_MY_COMPUTER    &kp PIPE                &kp ENTER           &msc SCROLL_DOWN       &msc SCROLL_UP    &kp BSLH              &kp PG_UP
+&kp PG_DN          &kp_kp_ht LS(GRAVE) GRAVE  &kp_kp_ht LS(N7) N7  &kp_kp_ht LS(N8) N8  &kp_kp_ht LS(N9) N9  &kp INS                 &kp C_AL_CALC         &kp C_AL_MY_COMPUTER    &kp PIPE                &kp ENTER           &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
                                               &out OUT_USB         &trans               &trans               &kp_kp_ht170 RPAR LPAR  &kp_kp_ht170 GT LT    &kp_kp_ht170 RBKT LBKT  &kp_kp_ht170 RBRC LBRC  &none               &none                  &out OUT_BLE
             >;
 
