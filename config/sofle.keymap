@@ -380,6 +380,15 @@
             require-prior-idle-ms = <170>;
             layers = <0 1 4>;
         };
+
+        combo_capsw {
+            bindings = <&caps_word>;
+            key-positions = <28 31>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <170>;
+            slow-release;
+            layers = <0>;
+        };
     };
 
     macros {
