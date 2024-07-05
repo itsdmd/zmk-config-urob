@@ -1,0 +1,602 @@
+layout: {qmk_keyboard: sofle/rev1}
+layers:
+  base_hrm:
+  - {t: ESC, h: '`'}
+  - Sft+ 1
+  - {t: Sft+ 2, h: '&macro_email_dd431'}
+  - Sft+ 3
+  - Sft+ 4
+  - Sft+ 5
+  - Sft+ 6
+  - Sft+ 7
+  - Sft+ 8
+  - _
+  - \
+  - {t: '&caps_word', h: CAPS}
+  - TAB
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: '[', h: '{'}
+  - BSPC
+  - A
+  - {t: R, h: LEFT ALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - D
+  - H
+  - {t: N, h: LSHFT}
+  - {t: E, h: LCTRL}
+  - {t: I, h: LALT}
+  - O
+  - ''''
+  - PG UP
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: LSHFT, h: toggle}
+  - {t: LCTRL, h: toggle}
+  - K
+  - M
+  - ','
+  - .
+  - /
+  - PG DN
+  - LGUI
+  - Ctl+ LEFT
+  - DEL
+  - {t: ENTER, h: extended}
+  - {t: mods, h: base_normal_mir}
+  - {t: mods, h: base_normal_mir}
+  - {t: SPACE, h: extended}
+  - TAB
+  - Ctl+ RIGHT
+  - {t: base_normal, h: toggle}
+  base_normal:
+  - {t: ESC, h: '`'}
+  - Sft+ 1
+  - {t: Sft+ 2, h: '&macro_email_dd431'}
+  - Sft+ 3
+  - Sft+ 4
+  - Sft+ 5
+  - Sft+ 6
+  - Sft+ 7
+  - Sft+ 8
+  - _
+  - Sft+ 0
+  - {t: '&caps_word', h: CAPS}
+  - TAB
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - '['
+  - BSPC
+  - A
+  - R
+  - S
+  - T
+  - D
+  - H
+  - N
+  - E
+  - I
+  - O
+  - ''''
+  - PG UP
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: LSHFT, h: toggle}
+  - {t: LCTRL, h: toggle}
+  - K
+  - M
+  - ','
+  - .
+  - /
+  - PG DN
+  - LGUI
+  - LALT
+  - DEL
+  - {t: ENTER, h: extended}
+  - {t: mods, h: base_normal_mir}
+  - {t: mods, h: base_normal_mir}
+  - {t: SPACE, h: extended}
+  - TAB
+  - LALT
+  - {t: base_hrm, h: toggle}
+  base_normal_mir:
+  - {t: ESC, h: '`'}
+  - Sft+ 1
+  - {t: Sft+ 2, h: '&macro_email_dd431'}
+  - Sft+ 3
+  - Sft+ 4
+  - Sft+ 5
+  - Sft+ 6
+  - Sft+ 7
+  - Sft+ 8
+  - _
+  - Sft+ 0
+  - {t: '&caps_word', h: CAPS}
+  - '['
+  - ;
+  - Y
+  - U
+  - L
+  - J
+  - G
+  - P
+  - F
+  - W
+  - Q
+  - TAB
+  - ''''
+  - O
+  - I
+  - E
+  - N
+  - H
+  - D
+  - T
+  - S
+  - R
+  - A
+  - BSPC
+  - PG DN
+  - /
+  - .
+  - ','
+  - M
+  - K
+  - {t: LSHFT, h: toggle}
+  - {t: LCTRL, h: toggle}
+  - B
+  - V
+  - C
+  - X
+  - Z
+  - PG UP
+  - LGUI
+  - LALT
+  - TAB
+  - {t: SPACE, h: extended}
+  - {type: held}
+  - ''
+  - {t: ENTER, h: extended}
+  - DEL
+  - LALT
+  - LGUI
+  qwerty:
+  - {t: ESC, h: '`'}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: '&caps_word', h: CAPS}
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - {t: BSPC, h: toggle}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - PG UP
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: LSHFT, h: toggle}
+  - {t: LCTRL, h: toggle}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - PG DN
+  - LGUI
+  - LALT
+  - LCTRL
+  - {t: ENTER, h: extended}
+  - LSHFT
+  - '&td_C_CA'
+  - {t: SPACE, h: extended}
+  - LGUI
+  - {t: base_hrm, h: toggle}
+  - LSHIFT
+  qwerty_mir:
+  - {t: ESC, h: '`'}
+  - '0'
+  - '9'
+  - '8'
+  - '7'
+  - '6'
+  - '5'
+  - '4'
+  - '3'
+  - '2'
+  - '1'
+  - {t: '&caps_word', h: CAPS}
+  - '['
+  - P
+  - O
+  - I
+  - U
+  - Y
+  - T
+  - R
+  - E
+  - W
+  - Q
+  - TAB
+  - DEL
+  - ;
+  - L
+  - K
+  - J
+  - H
+  - G
+  - F
+  - D
+  - S
+  - A
+  - BSPC
+  - PG DN
+  - /
+  - .
+  - ','
+  - M
+  - N
+  - {t: LSHFT, h: toggle}
+  - {t: LCTRL, h: toggle}
+  - B
+  - V
+  - C
+  - X
+  - Z
+  - PG UP
+  - LGUI
+  - LALT
+  - LSHFT
+  - {t: SPACE, h: extended}
+  - LCTRL
+  - '&td_S_CS'
+  - {t: ENTER, h: extended}
+  - {t: ▽, type: trans}
+  - {t: base_hrm, h: toggle}
+  - {t: ▽, type: trans}
+  extended:
+  - Alt+ F4
+  - {t: F1, h: F13}
+  - {t: F2, h: F14}
+  - {t: F3, h: F15}
+  - {t: F4, h: F16}
+  - {t: F5, h: F17}
+  - {t: F6, h: F18}
+  - {t: F7, h: F19}
+  - {t: F8, h: F20}
+  - {t: F9, h: F21}
+  - {t: F10, h: F22}
+  - PSCRN
+  - '&macro_two_spaces'
+  - ESC
+  - {t: KP 7, s: Sft+ 7}
+  - {t: KP 8, s: Sft+ 8}
+  - {t: KP 9, s: Sft+ 9}
+  - {t: F11, h: F23}
+  - {t: F12, h: F24}
+  - {t: +, h: '&macro_plus_equal'}
+  - {t: '-', h: _}
+  - '*'
+  - {t: /, h: '?'}
+  - {t: ']', h: '}'}
+  - DEL
+  - {t: KP 0, s: Sft+ 0}
+  - {t: KP 4, s: Sft+ 4}
+  - {t: KP 5, s: Sft+ 5}
+  - {t: KP 6, s: Sft+ 6}
+  - '='
+  - HOME
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - END
+  - PG DN
+  - {t: '`', h: Sft+ `}
+  - {t: KP 1, s: Sft+ 1}
+  - {t: KP 2, s: Sft+ 2}
+  - {t: KP 3, s: Sft+ 3}
+  - INS
+  - AL CALC
+  - AL MY COMPUTER
+  - SCROLLLOCK
+  - KP NUMLOCK
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - \
+  - PG UP
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - {t: (, h: ), type: held}
+  - {t: <, h: '>'}
+  - {t: '[', h: ']'}
+  - {t: '{', h: '}'}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  extra:
+  - {t: '&macro_superhot', h: '&macro_hyperheat'}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
+  - BT CLR
+  - TAB
+  - Meh+ Q
+  - ''
+  - ''
+  - ''
+  - BRI UP
+  - VOL UP
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - '&msc MOVE_DOWN'
+  - {t: BSPC, type: held}
+  - ''
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - BRI DN
+  - {t: VOL DN, h: MUTE}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&msc MOVE_UP'
+  - '&soft_off'
+  - ''
+  - ''
+  - '&mkp MB5'
+  - '&mkp MB4'
+  - '&bootloader'
+  - POWER
+  - RESET
+  - '&bootloader'
+  - PREV
+  - PLAY PAUSE
+  - NEXT
+  - ''
+  - '&soft_off'
+  - {t: base_hrm, h: toggle}
+  - '&sys_reset'
+  - ''
+  - {t: ENTER, type: held}
+  - SLEEP
+  - AL LOCK
+  - SPACE
+  - ''
+  - '&sys_reset'
+  - {t: base_hrm, h: toggle}
+  mods:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - ''
+  - ''
+  - {t: RSHFT, h: sticky}
+  - {t: RCTRL, h: sticky}
+  - {t: RALT, h: sticky}
+  - {t: RGUI, h: sticky}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB5'
+  - '&mkp MB4'
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - {t: '&mkp MB3', type: held}
+  - '&mkp MB3'
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB4'
+  - '&mkp MB5'
+combos:
+- p: [42, 43]
+  k: '&soft_off'
+- p: [39, 40]
+  k: {t: base_hrm, h: toggle}
+- p: [45, 46]
+  k: {t: base_hrm, h: toggle}
+- p: [40, 38]
+  k: {t: base_normal, h: toggle}
+- p: [45, 47]
+  k: {t: base_normal, h: toggle}
+- p: [37, 38]
+  k: {t: qwerty, h: toggle}
+  l: [base_hrm, base_normal, extra, qwerty_mir, mods]
+- p: [48, 47]
+  k: {t: qwerty, h: toggle}
+  l: [base_hrm, base_normal, extra, qwerty_mir, mods]
+- p: [37, 38]
+  k: {t: qwerty_mir, h: toggle}
+  l: [qwerty]
+- p: [47, 48]
+  k: {t: qwerty_mir, h: toggle}
+  l: [qwerty]
+- p: [4, 2, 3]
+  k: {t: extended, h: toggle}
+- p: [7, 8, 9]
+  k: {t: extended, h: toggle}
+- p: [38, 39]
+  k: {t: extra, h: toggle}
+- p: [46, 47]
+  k: {t: extra, h: toggle}
+- p: [53, 24]
+  k: extra
+- p: [56, 35]
+  k: extra
+- p: [56, 53]
+  k: extra
+- p: [28, 31]
+  k: {t: LSHFT, h: sticky}
+- p: [27, 32]
+  k: {t: LCTRL, h: sticky}
+- p: [26, 33]
+  k: {t: LALT, h: sticky}
+- p: [25, 34]
+  k: LGUI
+- p: [16, 15]
+  k: {t: Sft+ LCTRL, h: sticky}
+  l: [base_hrm, base_normal, extended]
+- p: [19, 20]
+  k: {t: Sft+ LCTRL, h: sticky}
+  l: [base_hrm, base_normal, extended]
+- p: [14, 15]
+  k: {t: Alt+ LCTRL, h: sticky}
+  l: [base_hrm, base_normal, extended]
+- p: [21, 20]
+  k: {t: Alt+ LCTRL, h: sticky}
+  l: [base_hrm, base_normal, extended]
+- p: [15, 14, 16]
+  k: {t: Alt+Sft+ LCTRL, h: sticky}
+  l: [base_hrm, base_normal, extended]
+- p: [20, 21, 19]
+  k: {t: Alt+Sft+ LCTRL, h: sticky}
+  l: [base_hrm, base_normal, extended]
+- p: [16, 29]
+  k: {t: LSHFT, h: toggle}
+  l: [base_hrm, base_normal, extended]
+- p: [19, 30]
+  k: {t: LCTRL, h: toggle}
+  l: [base_hrm, base_normal, extended]
+- p: [18, 19]
+  k: {t: LGUI, h: toggle}
+  l: [base_hrm, base_normal, extended]
+- p: [16, 17]
+  k: {t: LALT, h: toggle}
+  l: [base_hrm, base_normal, extended]
+- p: [27, 26]
+  k: '&key_repeat'
+  l: [base_hrm, base_normal, extended]
+- p: [33, 32]
+  k: '&key_repeat'
+  l: [base_hrm, base_normal, extended]
+- p: [25, 29]
+  k: SPACE
+- p: [34, 30]
+  k: ENTER
+- p: [45, 40]
+  k: _
+  l: [base_hrm, base_normal, extended, extra]
+- p: [46, 39]
+  k: /
+  l: [base_hrm, base_normal, extended, extra]
+- p: [38, 47]
+  k: \
+  l: [base_hrm, base_normal, extended, extra]
+- p: [48, 37]
+  k: '|'
+  l: [base_hrm, base_normal, extended, extra]
+- p: [29, 30]
+  k: '&caps_word'
+  l: [base_hrm]
+- p: [7, 8]
+  k: PP
+- p: [7, 6]
+  k: PREV
+- p: [9, 8]
+  k: NEXT
+- p: [3, 4]
+  k: {t: VOL UP, s: BRI UP}
+- p: [3, 2]
+  k: {t: VOL DN, s: BRI DN}
+- p: [2, 1]
+  k: MUTE
