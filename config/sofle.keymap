@@ -24,7 +24,7 @@
     quick-release;
 };
 
-&sl { release-after-ms = <300>; };
+&sl { release-after-ms = <500>; };
 
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -46,6 +46,7 @@
             timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
+            layers = <1 2 3 4 5 6>;
         };
 
         combo_to_base_hrm_r {
@@ -54,6 +55,7 @@
             timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
+            layers = <1 2 3 4 5 6>;
         };
 
         combo_to_base_normal_l {
@@ -62,6 +64,7 @@
             timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
+            layers = <0 2 3 4 5 6>;
         };
 
         combo_to_base_normal_r {
@@ -70,6 +73,7 @@
             timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
+            layers = <0 2 3 4 5 6>;
         };
 
         combo_to_qwerty_l {
@@ -77,7 +81,7 @@
             key-positions = <37 38>;
             slow-release;
             timeout-ms = <100>;
-            layers = <0 1 6 4 7>;
+            layers = <0 1 6 4 2 5>;
             require-prior-idle-ms = <300>;
         };
 
@@ -87,7 +91,7 @@
             timeout-ms = <100>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <0 1 6 4 7>;
+            layers = <0 1 6 4 2 5>;
         };
 
         combo_to_qwerty_mir_l {
@@ -124,15 +128,16 @@
             require-prior-idle-ms = <300>;
         };
 
-        combo_to_exxa_l {
+        combo_to_extra_l {
             bindings = <&to 6>;
             key-positions = <38 39>;
             timeout-ms = <170>;
             slow-release;
             require-prior-idle-ms = <300>;
+            layers = <0 1 2 3 4 5>;
         };
 
-        combo_to_exxa_r {
+        combo_to_extra_r {
             bindings = <&to 6>;
             key-positions = <46 47>;
             timeout-ms = <170>;
@@ -140,21 +145,21 @@
             require-prior-idle-ms = <300>;
         };
 
-        combo_mo_exxa_1 {
+        combo_mo_extra_1 {
             bindings = <&mo 6>;
             key-positions = <53 24>;
             timeout-ms = <120>;
             require-prior-idle-ms = <250>;
         };
 
-        combo_mo_exxa_2 {
+        combo_mo_extra_2 {
             bindings = <&mo 6>;
             key-positions = <56 35>;
             timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
-        combo_mo_exxa_3 {
+        combo_mo_extra_3 {
             bindings = <&mo 6>;
             key-positions = <56 53>;
             timeout-ms = <150>;
@@ -717,11 +722,11 @@
         layer_qwerty {
             display-name = "qwerty";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6       &kp N7    &kp N8     &kp N9      &kp N0    &ht_capw CAPS 0
-&kp TAB              &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y        &kp U     &kp I      &kp O       &kp P     &kp LBKT
-&kt BSPC             &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H        &kp J     &kp K      &kp L       &kp SEMI  &kp APOS
-&kp PG_UP            &kp Z   &kp X     &kp C     &kp V      &kp B        &kt LSHFT    &kt LCTRL  &kp N        &kp M     &kp COMMA  &kp DOT     &kp FSLH  &kp PG_DN
-                             &kp LGUI  &kp LALT  &kp LCTRL  &lt 5 ENTER  &kp LSHFT    &td_C_CA   &lt 5 SPACE  &kp LGUI  &to 0      &kp LSHIFT
+&ht_kp_kp GRAVE ESC  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6       &kp N7     &kp N8     &kp N9   &kp N0    &ht_capw CAPS 0
+&kp TAB              &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y        &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&kt BSPC             &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
+&kp PG_UP            &kp Z   &kp X     &kp C     &kp V      &kp B        &kt LSHFT    &kt LCTRL  &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+                             &kp LGUI  &kp LALT  &kp LCTRL  &lt 5 ENTER  &kp LSHFT    &td_C_CA   &lt 5 SPACE  &kp LSHFT  &kp LALT   &to 0
             >;
 
             sensor-bindings =
@@ -783,11 +788,11 @@
         layer_mods {
             display-name = "mods";
             bindings = <
-&none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
-&none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
-&none  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &none
-&none  &none     &none     &none      &none      &none     &none       &none     &none     &none      &none      &none     &none     &none
-                 &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
+&none     &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
+&none     &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
+&kp LGUI  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &kp RGUI
+&none     &none     &kp LALT  &kp LCTRL  &kp LSHFT  &none     &none       &none     &none     &kp RSHFT  &kp RCTRL  &kp RALT  &none     &none
+                    &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
             >;
 
             label = "Mods";
