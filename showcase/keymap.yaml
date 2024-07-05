@@ -241,9 +241,9 @@ layers:
   - LSHFT
   - '&td_C_CA'
   - {t: SPACE, h: extended}
-  - LGUI
+  - LSHFT
+  - LALT
   - {t: base_hrm, h: toggle}
-  - LSHIFT
   qwerty_mir:
   - {t: ESC, h: '`'}
   - '0'
@@ -452,7 +452,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - LGUI
   - {t: LGUI, h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
@@ -463,19 +463,19 @@ layers:
   - {t: RCTRL, h: sticky}
   - {t: RALT, h: sticky}
   - {t: RGUI, h: sticky}
+  - RGUI
+  - ''
+  - ''
+  - LALT
+  - LCTRL
+  - LSHFT
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - RSHFT
+  - RCTRL
+  - RALT
   - ''
   - ''
   - '&mkp MB5'
@@ -493,18 +493,22 @@ combos:
   k: '&soft_off'
 - p: [39, 40]
   k: {t: base_hrm, h: toggle}
+  l: [base_normal, base_normal_mir, qwerty, qwerty_mir, extended, extra]
 - p: [45, 46]
   k: {t: base_hrm, h: toggle}
+  l: [base_normal, base_normal_mir, qwerty, qwerty_mir, extended, extra]
 - p: [40, 38]
   k: {t: base_normal, h: toggle}
+  l: [base_hrm, base_normal_mir, qwerty, qwerty_mir, extended, extra]
 - p: [45, 47]
   k: {t: base_normal, h: toggle}
+  l: [base_hrm, base_normal_mir, qwerty, qwerty_mir, extended, extra]
 - p: [37, 38]
   k: {t: qwerty, h: toggle}
-  l: [base_hrm, base_normal, extra, qwerty_mir, mods]
+  l: [base_hrm, base_normal, extra, qwerty_mir, base_normal_mir, extended]
 - p: [48, 47]
   k: {t: qwerty, h: toggle}
-  l: [base_hrm, base_normal, extra, qwerty_mir, mods]
+  l: [base_hrm, base_normal, extra, qwerty_mir, base_normal_mir, extended]
 - p: [37, 38]
   k: {t: qwerty_mir, h: toggle}
   l: [qwerty]
@@ -517,6 +521,7 @@ combos:
   k: {t: extended, h: toggle}
 - p: [38, 39]
   k: {t: extra, h: toggle}
+  l: [base_hrm, base_normal, base_normal_mir, qwerty, qwerty_mir, extended]
 - p: [46, 47]
   k: {t: extra, h: toggle}
 - p: [53, 24]
