@@ -24,6 +24,8 @@
     quick-release;
 };
 
+&sl { release-after-ms = <300>; };
+
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
@@ -578,7 +580,7 @@
 &kp TAB              &kp Q       &kp W              &kp F         &kp P         &kp G                                        &kp J        &kp L         &kp U          &kp Y        &kp SEMI  &ht_kp_kp LBRC LBKT
 &kp BSPC             &kp A       &hrm LEFT_ALT R    &hrm LCTRL S  &hrm LSHFT T  &kp D                                        &kp H        &hrm LSHFT N  &hrm LCTRL E   &hrm LALT I  &kp O     &kp APOS
 &kp PG_UP            &kp Z       &kp X              &kp C         &kp V         &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M         &kp COMMA      &kp DOT      &kp FSLH  &kp PG_DN
-                                 &kp LGUI           &kp LC(LEFT)  &kp DEL       &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 8  &lt 5 SPACE  &kp TAB       &kp LC(RIGHT)  &to 1
+                                 &kp LGUI           &kp LC(LEFT)  &kp DEL       &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB       &kp LC(RIGHT)  &to 1
             >;
 
             sensor-bindings =
@@ -595,7 +597,7 @@
 &kp TAB              &kp Q       &kp W              &kp F       &kp P       &kp G                                        &kp J        &kp L       &kp U       &kp Y      &kp SEMI    &kp LBKT
 &kp BSPC             &kp A       &kp R              &kp S       &kp T       &kp D                                        &kp H        &kp N       &kp E       &kp I      &kp O       &kp APOS
 &kp PG_UP            &kp Z       &kp X              &kp C       &kp V       &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M       &kp COMMA   &kp DOT    &kp FSLH    &kp PG_DN
-                                 &kp LGUI           &kp LALT    &kp DEL     &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 8  &lt 5 SPACE  &kp TAB     &kp LALT    &to 0
+                                 &kp LGUI           &kp LALT    &kp DEL     &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB     &kp LALT    &to 0
             >;
 
             sensor-bindings =
@@ -688,30 +690,17 @@
                 <&inc_dec_kp DEL BSPC>;
         };
 
-        layer_mods_l {
-            display-name = "mods-l";
+        layer_mods {
+            display-name = "mods";
             bindings = <
-&none  &none     &none     &none      &none      &none                           &none     &none     &none     &none     &none  &none
-&none  &none     &none     &none      &none      &none                           &none     &none     &none     &none     &none  &none
-&none  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &none     &none     &none     &none  &none
-&none  &none     &none     &none      &none      &none     &none       &none     &none     &none     &none     &none     &none  &none
-                 &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2  &mkp MB4  &mkp MB5
-            >;
-            
-            label = "Mods L";
-        };
-
-        layer_mods_r {
-            display-name = "mods-r";
-            bindings = <
-&none  &none  &none     &none     &none     &none                           &none     &none      &none      &none     &none     &none
-&none  &none  &none     &none     &none     &none                           &none     &none      &none      &none     &none     &none
-&none  &none  &none     &none     &none     &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &none
-&none  &none  &none     &none     &none     &none     &none       &none     &none     &none      &none      &none     &none     &none
-              &mkp MB5  &mkp MB4  &mkp MB2  &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
+&none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
+&none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
+&none  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &none
+&none  &none     &none     &none      &none      &none     &none       &none     &none     &none      &none      &none     &none     &none
+                 &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
             >;
 
-            label = "Mods R";
+            label = "Mods";
         };
     };
 };
