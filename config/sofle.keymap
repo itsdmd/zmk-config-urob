@@ -568,6 +568,96 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        mm_S_kp0_0: mm_S_kp0_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP0_0";
+            bindings = <&kp KP_N0>, <&kp LS(N0)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp1_1: mm_S_kp1_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP1_1";
+            bindings = <&kp KP_N1>, <&kp LS(N1)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp2_2: mm_S_kp2_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP2_2";
+            bindings = <&kp KP_N2>, <&kp LS(N2)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp3_3: mm_S_kp3_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP3_3";
+            bindings = <&kp KP_N3>, <&kp LS(N3)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp4_4: mm_S_kp4_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP4_4";
+            bindings = <&kp KP_N4>, <&kp LS(N4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp5_5: mm_S_kp5_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP5_5";
+            bindings = <&kp KP_N5>, <&kp LS(N5)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp6_6: mm_S_kp6_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP6_6";
+            bindings = <&kp KP_N6>, <&kp LS(N6)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp7_7: mm_S_kp7_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP7_7";
+            bindings = <&kp KP_N7>, <&kp LS(N7)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp8_8: mm_S_kp8_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP8_8";
+            bindings = <&kp KP_N8>, <&kp LS(N8)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_kp9_9: mm_S_kp9_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_KP9_9";
+            bindings = <&kp KP_N9>, <&kp LS(N9)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -660,11 +750,11 @@
         layer_extended {
             display-name = "extended";
             bindings = <
-&kp LA(F4)         &ht_kp_kp F13 F1           &ht_kp_kp F14 F2        &ht_kp_kp F15 F3        &ht_kp_kp F16 F4        &ht_kp_kp F17 F5                                                      &ht_kp_kp F18 F6        &ht_kp_kp F19 F7    &ht_kp_kp F20 F8       &ht_kp_kp F21 F9  &ht_kp_kp F22 F10     &kp PSCRN
-&macro_two_spaces  &kp ESC                    &ht_kp_kp LS(N7) KP_N7  &ht_kp_kp LS(N8) KP_N8  &ht_kp_kp LS(N9) KP_N9  &ht_kp_kp F23 F11                                                     &ht_kp_kp F24 F12       &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK         &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
-&kp DEL            &ht_kp_kp LS(N0) KP_N0     &ht_kp_kp LS(N4) KP_N4  &ht_kp_kp LS(N5) KP_N5  &ht_kp_kp LS(N6) KP_N6  &kp EQUAL                                                             &kp HOME                &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
-&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &ht_kp_kp LS(N1) KP_N1  &ht_kp_kp LS(N2) KP_N2  &ht_kp_kp LS(N3) KP_N3  &kp INS                 &kp C_AL_CALC         &kp C_AL_MY_COMPUTER    &kp KP_NUMLOCK          &kp ENTER           &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
-                                              &mkp MB3                &mkp MB2                &mkp MB1                &ht170_kp_kp RPAR LPAR  &ht170_kp_kp GT LT    &ht170_kp_kp RBKT LBKT  &ht170_kp_kp RBRC LBRC  &mkp MB1            &mkp MB2               &mkp MB3
+&kp LA(F4)         &ht_kp_kp F13 F1           &ht_kp_kp F14 F2  &ht_kp_kp F15 F3  &ht_kp_kp F16 F4  &ht_kp_kp F17 F5                                                      &ht_kp_kp F18 F6        &ht_kp_kp F19 F7    &ht_kp_kp F20 F8       &ht_kp_kp F21 F9  &ht_kp_kp F22 F10     &kp PSCRN
+&macro_two_spaces  &kp ESC                    &mm_S_kp7_7       &mm_S_kp8_8       &mm_S_kp9_9       &ht_kp_kp F23 F11                                                     &ht_kp_kp F24 F12       &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK         &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
+&kp DEL            &mm_S_kp0_0                &mm_S_kp4_4       &mm_S_kp5_5       &mm_S_kp6_6       &kp EQUAL                                                             &kp HOME                &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
+&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1       &mm_S_kp2_2       &mm_S_kp3_3       &kp INS                 &kp C_AL_CALC         &kp C_AL_MY_COMPUTER    &kp SCROLLLOCK          &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
+                                              &mkp MB3          &mkp MB2          &mkp MB1          &ht170_kp_kp RPAR LPAR  &ht170_kp_kp GT LT    &ht170_kp_kp RBKT LBKT  &ht170_kp_kp RBRC LBRC  &mkp MB1            &mkp MB2               &mkp MB3
             >;
 
             sensor-bindings =
