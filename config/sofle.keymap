@@ -20,7 +20,7 @@
 
 &sk {
     lazy;
-    release-after-ms = <3000>;
+    release-after-ms = <1500>;
     quick-release;
 };
 
@@ -41,7 +41,7 @@
         combo_to_base_hrm_l {
             bindings = <&to 0>;
             key-positions = <39 40>;
-            timeout-ms = <250>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -49,7 +49,7 @@
         combo_to_base_hrm_r {
             bindings = <&to 0>;
             key-positions = <45 46>;
-            timeout-ms = <250>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -57,7 +57,7 @@
         combo_to_base_normal_l {
             bindings = <&to 1>;
             key-positions = <40 38>;
-            timeout-ms = <250>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -65,7 +65,7 @@
         combo_to_base_normal_r {
             bindings = <&to 1>;
             key-positions = <45 47>;
-            timeout-ms = <250>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -74,7 +74,7 @@
             bindings = <&to 3>;
             key-positions = <37 38>;
             slow-release;
-            timeout-ms = <250>;
+            timeout-ms = <100>;
             layers = <0 1 6 4 7>;
             require-prior-idle-ms = <300>;
         };
@@ -82,7 +82,7 @@
         combo_to_qwerty_r {
             bindings = <&to 3>;
             key-positions = <48 47>;
-            timeout-ms = <250>;
+            timeout-ms = <100>;
             slow-release;
             require-prior-idle-ms = <300>;
             layers = <0 1 6 4 7>;
@@ -92,17 +92,17 @@
             bindings = <&to 4>;
             key-positions = <37 38>;
             slow-release;
-            timeout-ms = <250>;
+            timeout-ms = <100>;
             layers = <3>;
-            require-prior-idle-ms = <1000>;
+            require-prior-idle-ms = <300>;
         };
 
         combo_to_qwerty_mir_r {
             bindings = <&to 4>;
             key-positions = <47 48>;
-            timeout-ms = <250>;
+            timeout-ms = <100>;
             slow-release;
-            require-prior-idle-ms = <1000>;
+            require-prior-idle-ms = <300>;
             layers = <3>;
         };
 
@@ -110,14 +110,14 @@
             bindings = <&to 5>;
             key-positions = <4 2 3>;
             slow-release;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <300>;
         };
 
         combo_to_extended_r {
             bindings = <&to 5>;
             key-positions = <7 8 9>;
-            timeout-ms = <250>;
+            timeout-ms = <120>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -125,7 +125,7 @@
         combo_to_exxa_l {
             bindings = <&to 6>;
             key-positions = <38 39>;
-            timeout-ms = <250>;
+            timeout-ms = <170>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -133,7 +133,7 @@
         combo_to_exxa_r {
             bindings = <&to 6>;
             key-positions = <46 47>;
-            timeout-ms = <250>;
+            timeout-ms = <170>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
@@ -141,7 +141,7 @@
         combo_mo_exxa_1 {
             bindings = <&mo 6>;
             key-positions = <53 24>;
-            timeout-ms = <150>;
+            timeout-ms = <120>;
             require-prior-idle-ms = <250>;
         };
 
@@ -195,7 +195,7 @@
             bindings = <&sk LS(LCTRL)>;
             key-positions = <16 15>;
             require-prior-idle-ms = <170>;
-            timeout-ms = <100>;
+            timeout-ms = <80>;
             slow-release;
             layers = <0 1 5>;
         };
@@ -203,7 +203,7 @@
         combo_CS_r {
             bindings = <&sk LS(LCTRL)>;
             key-positions = <19 20>;
-            timeout-ms = <120>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -212,7 +212,7 @@
         combo_CA_l {
             bindings = <&sk LA(LCTRL)>;
             key-positions = <14 15>;
-            timeout-ms = <100>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -221,7 +221,7 @@
         combo_CA_r {
             bindings = <&sk LA(LCTRL)>;
             key-positions = <21 20>;
-            timeout-ms = <150>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -230,7 +230,7 @@
         combo_CAS_l {
             bindings = <&sk LA(LS(LCTRL))>;
             key-positions = <15 14 16>;
-            timeout-ms = <120>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -239,7 +239,7 @@
         combo_CAS_r {
             bindings = <&sk LA(LS(LCTRL))>;
             key-positions = <20 21 19>;
-            timeout-ms = <150>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -248,7 +248,7 @@
         combo_kt_lshft {
             bindings = <&kt LSHFT>;
             key-positions = <16 29>;
-            timeout-ms = <150>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -257,7 +257,7 @@
         combo_kt_lctrl {
             bindings = <&kt LCTRL>;
             key-positions = <19 30>;
-            timeout-ms = <150>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <170>;
             slow-release;
             layers = <0 1 5>;
@@ -265,8 +265,8 @@
 
         combo_kt_lgui {
             bindings = <&kt LGUI>;
-            key-positions = <17 16>;
-            timeout-ms = <150>;
+            key-positions = <18 19>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <170>;
             layers = <0 1 5>;
@@ -274,8 +274,8 @@
 
         combo_kt_lalt {
             bindings = <&kt LALT>;
-            key-positions = <18 19>;
-            timeout-ms = <150>;
+            key-positions = <16 17>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <170>;
             layers = <0 1 5>;
@@ -284,7 +284,7 @@
         combo_repeat_l {
             bindings = <&key_repeat>;
             key-positions = <27 26>;
-            timeout-ms = <80>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <150>;
             layers = <0 1 5>;
@@ -295,24 +295,24 @@
             key-positions = <33 32>;
             slow-release;
             require-prior-idle-ms = <150>;
-            timeout-ms = <80>;
+            timeout-ms = <50>;
             layers = <0 1 5>;
         };
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <25 28>;
+            key-positions = <25 29>;
             slow-release;
             require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
+            timeout-ms = <50>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <34 31>;
+            key-positions = <34 30>;
             slow-release;
             require-prior-idle-ms = <100>;
-            timeout-ms = <100>;
+            timeout-ms = <50>;
         };
 
         combo_under {
@@ -578,7 +578,7 @@
 &kp TAB              &kp Q       &kp W              &kp F         &kp P         &kp G                                        &kp J        &kp L         &kp U          &kp Y        &kp SEMI  &ht_kp_kp LBRC LBKT
 &kp BSPC             &kp A       &hrm LEFT_ALT R    &hrm LCTRL S  &hrm LSHFT T  &kp D                                        &kp H        &hrm LSHFT N  &hrm LCTRL E   &hrm LALT I  &kp O     &kp APOS
 &kp PG_UP            &kp Z       &kp X              &kp C         &kp V         &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M         &kp COMMA      &kp DOT      &kp FSLH  &kp PG_DN
-                                 &kp LGUI           &kp LC(LEFT)  &kp DEL       &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB       &kp LC(RIGHT)  &to 1
+                                 &kp LGUI           &kp LC(LEFT)  &kp DEL       &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 8  &lt 5 SPACE  &kp TAB       &kp LC(RIGHT)  &to 1
             >;
 
             sensor-bindings =
@@ -595,7 +595,7 @@
 &kp TAB              &kp Q       &kp W              &kp F       &kp P       &kp G                                        &kp J        &kp L       &kp U       &kp Y      &kp SEMI    &kp LBKT
 &kp BSPC             &kp A       &kp R              &kp S       &kp T       &kp D                                        &kp H        &kp N       &kp E       &kp I      &kp O       &kp APOS
 &kp PG_UP            &kp Z       &kp X              &kp C       &kp V       &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M       &kp COMMA   &kp DOT    &kp FSLH    &kp PG_DN
-                                 &kp LGUI           &kp LALT    &kp DEL     &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB     &kp LALT    &to 0
+                                 &kp LGUI           &kp LALT    &kp DEL     &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 8  &lt 5 SPACE  &kp TAB     &kp LALT    &to 0
             >;
 
             sensor-bindings =
@@ -618,7 +618,7 @@
             sensor-bindings =
                 <&inc_dec_kp LC(RIGHT) LC(LEFT)>,
                 <&inc_dec_kp DOWN UP>;
-            
+
             label = "Base Normal Mirrored";
         };
 
@@ -688,17 +688,29 @@
                 <&inc_dec_kp DEL BSPC>;
         };
 
-        layer_mods {
+        layer_mods_l {
+            label = "Mods L";
             display-name = "mods";
             bindings = <
-&none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
-&none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
-&none  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &none
-&none  &none     &none     &none      &none      &none     &none       &none     &none     &none      &none      &none     &none     &none
-                 &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
+&none  &none     &none     &none      &none      &none                           &none     &none     &none     &none     &none  &none
+&none  &none     &none     &none      &none      &none                           &none     &none     &none     &none     &none  &none
+&none  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &none     &none     &none     &none  &none
+&none  &none     &none     &none      &none      &none     &none       &none     &none     &none     &none     &none     &none  &none
+                 &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2  &mkp MB4  &mkp MB5
+            >;
+        };
+
+        layer_mods_r {
+            display-name = "mods";
+            bindings = <
+&none  &none  &none     &none     &none     &none                           &none     &none      &none      &none     &none     &none
+&none  &none  &none     &none     &none     &none                           &none     &none      &none      &none     &none     &none
+&none  &none  &none     &none     &none     &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &none
+&none  &none  &none     &none     &none     &none     &none       &none     &none     &none      &none      &none     &none     &none
+              &mkp MB5  &mkp MB4  &mkp MB2  &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
             >;
 
-            label = "Mods";
+            label = "Mods R";
         };
     };
 };
