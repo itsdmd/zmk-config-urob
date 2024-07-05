@@ -159,6 +159,38 @@
             require-prior-idle-ms = <250>;
         };
 
+        combo_sk_lshft {
+            bindings = <&sk LSHFT>;
+            key-positions = <28 31>;
+            timeout-ms = <80>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_sk_lctrl {
+            bindings = <&sk LCTRL>;
+            key-positions = <27 32>;
+            timeout-ms = <80>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_sk_lalt {
+            bindings = <&sk LALT>;
+            key-positions = <26 33>;
+            timeout-ms = <80>;
+            slow-release;
+            require-prior-idle-ms = <150>;
+        };
+
+        combo_kp_gui {
+            bindings = <&kp LGUI>;
+            key-positions = <25 34>;
+            timeout-ms = <80>;
+            slow-release;
+            require-prior-idle-ms = <170>;
+        };
+
         combo_CS_l {
             bindings = <&sk LS(LCTRL)>;
             key-positions = <16 15>;
@@ -249,54 +281,6 @@
             layers = <0 1 5>;
         };
 
-        combo_playpause {
-            bindings = <&kp C_PP>;
-            key-positions = <7 8>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-        };
-
-        combo_prev {
-            bindings = <&kp C_PREV>;
-            key-positions = <7 6>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-        };
-
-        combo_next {
-            bindings = <&kp C_NEXT>;
-            key-positions = <9 8>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-        };
-
-        combo_volup {
-            bindings = <&mm_alt_volup_briup>;
-            key-positions = <3 4>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-        };
-
-        combo_voldn {
-            bindings = <&mm_alt_voldn_bridn>;
-            key-positions = <3 2>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-        };
-
-        combo_mute {
-            bindings = <&kp C_MUTE>;
-            key-positions = <2 1>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-        };
-
         combo_repeat_l {
             bindings = <&key_repeat>;
             key-positions = <27 26>;
@@ -376,34 +360,50 @@
             layers = <0>;
         };
 
-        combo_sk_lshft {
-            bindings = <&sk LSHFT>;
-            key-positions = <28 31>;
-            timeout-ms = <80>;
+        combo_playpause {
+            bindings = <&kp C_PP>;
+            key-positions = <7 8>;
+            timeout-ms = <150>;
             slow-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <170>;
         };
 
-        combo_sk_lctrl {
-            bindings = <&sk LCTRL>;
-            key-positions = <27 32>;
-            timeout-ms = <80>;
+        combo_prev {
+            bindings = <&kp C_PREV>;
+            key-positions = <7 6>;
+            timeout-ms = <150>;
             slow-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <170>;
         };
 
-        combo_sk_lalt {
-            bindings = <&sk LALT>;
-            key-positions = <26 33>;
-            timeout-ms = <80>;
+        combo_next {
+            bindings = <&kp C_NEXT>;
+            key-positions = <9 8>;
+            timeout-ms = <150>;
             slow-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <170>;
         };
 
-        combo_kp_gui {
-            bindings = <&kp LGUI>;
-            key-positions = <25 34>;
-            timeout-ms = <80>;
+        combo_volup {
+            bindings = <&mm_alt_volup_briup>;
+            key-positions = <3 4>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <170>;
+        };
+
+        combo_voldn {
+            bindings = <&mm_alt_voldn_bridn>;
+            key-positions = <3 2>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <170>;
+        };
+
+        combo_mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <2 1>;
+            timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -606,8 +606,7 @@
         };
 
         layer_base_normal_mir {
-            label = "Base Normal Mirrored";
-            display-name = "base-normal";
+            display-name = "base-normal-mir";
             bindings = <
 &ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp UNDER  &kp LS(N0)  &ht_capw CAPS 0
 &kp LBKT             &kp SEMI    &kp Y              &kp U       &kp L       &kp J                                &kp G        &kp P       &kp F       &kp W      &kp Q       &kp TAB
@@ -619,6 +618,8 @@
             sensor-bindings =
                 <&inc_dec_kp LC(RIGHT) LC(LEFT)>,
                 <&inc_dec_kp DOWN UP>;
+            
+            label = "Base Normal Mirrored";
         };
 
         layer_qwerty {
@@ -672,7 +673,7 @@
         };
 
         layer_extra {
-            display-name = "exxa";
+            display-name = "extra";
             bindings = <
 &fuego 0 0  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &bt BT_SEL 4               &bt BT_SEL 3    &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
 &kp TAB     &kp LS(LC(LA(Q)))  &none         &none         &none         &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
@@ -688,6 +689,7 @@
         };
 
         layer_mods {
+            display-name = "mods";
             bindings = <
 &none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
 &none  &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
