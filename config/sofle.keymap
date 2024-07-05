@@ -721,7 +721,7 @@
 &kp TAB              &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y        &kp U     &kp I      &kp O       &kp P     &kp LBKT
 &kt BSPC             &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H        &kp J     &kp K      &kp L       &kp SEMI  &kp APOS
 &kp PG_UP            &kp Z   &kp X     &kp C     &kp V      &kp B        &kt LSHFT    &kt LCTRL  &kp N        &kp M     &kp COMMA  &kp DOT     &kp FSLH  &kp PG_DN
-                             &kp LGUI  &kp LALT  &kp LCTRL  &lt 5 ENTER  &td_S_CS     &td_C_CA   &lt 5 SPACE  &kp LGUI  &to 0      &kp LSHIFT
+                             &kp LGUI  &kp LALT  &kp LCTRL  &lt 5 ENTER  &kp LSHFT    &td_C_CA   &lt 5 SPACE  &kp LGUI  &to 0      &kp LSHIFT
             >;
 
             sensor-bindings =
@@ -738,7 +738,7 @@
 &kp LBKT             &kp P     &kp O     &kp I      &kp U      &kp Y                                &kp T        &kp R   &kp E   &kp W   &kp Q   &kp TAB
 &kp DEL              &kp SEMI  &kp L     &kp K      &kp J      &kp H                                &kp G        &kp F   &kp D   &kp S   &kp A   &kp BSPC
 &kp PG_DN            &kp FSLH  &kp DOT   &kp COMMA  &kp M      &kp N        &kt LSHFT    &kt LCTRL  &kp B        &kp V   &kp C   &kp X   &kp Z   &kp PG_UP
-                               &kp LGUI  &kp LALT   &kp LSHFT  &lt 5 SPACE  &td_C_CA     &td_S_CS   &lt 5 ENTER  &trans  &to 0   &trans
+                               &kp LGUI  &kp LALT   &kp LSHFT  &lt 5 SPACE  &kp LCTRL    &td_S_CS   &lt 5 ENTER  &trans  &to 0   &trans
             >;
 
             label = "QWERTY Mirrored";
