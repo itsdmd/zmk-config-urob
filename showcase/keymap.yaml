@@ -26,7 +26,7 @@ layers:
   - ;
   - {t: '[', h: '{'}
   - BSPC
-  - A
+  - {t: A, h: LGUI}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LCTRL}
   - {t: T, h: LSHFT}
@@ -35,7 +35,7 @@ layers:
   - {t: N, h: LSHFT}
   - {t: E, h: LCTRL}
   - {t: I, h: LALT}
-  - O
+  - {t: O, h: LGUI}
   - ''''
   - PG UP
   - Z
@@ -52,14 +52,14 @@ layers:
   - /
   - PG DN
   - LGUI
+  - LALT
   - Ctl+ LEFT
-  - DEL
   - {t: ENTER, h: extended}
-  - {t: mods, h: base_normal_mir}
-  - {t: mods, h: base_normal_mir}
+  - {t: DEL, h: base_normal_mir}
+  - {t: TAB, h: base_normal_mir}
   - {t: SPACE, h: extended}
-  - TAB
   - Ctl+ RIGHT
+  - LGUI
   - {t: base_normal, h: toggle}
   base_normal:
   - {t: ESC, h: '`'}
@@ -72,7 +72,7 @@ layers:
   - Sft+ 7
   - Sft+ 8
   - _
-  - Sft+ 0
+  - \
   - {t: '&caps_word', h: CAPS}
   - TAB
   - Q
@@ -123,18 +123,18 @@ layers:
   - LALT
   - {t: base_hrm, h: toggle}
   base_normal_mir:
-  - {t: ESC, h: '`'}
-  - Sft+ 1
-  - {t: Sft+ 2, h: '&macro_email_dd431'}
-  - Sft+ 3
-  - Sft+ 4
-  - Sft+ 5
-  - Sft+ 6
-  - Sft+ 7
-  - Sft+ 8
-  - _
-  - Sft+ 0
   - {t: '&caps_word', h: CAPS}
+  - \
+  - _
+  - Sft+ 8
+  - Sft+ 7
+  - Sft+ 6
+  - Sft+ 5
+  - Sft+ 4
+  - Sft+ 3
+  - '2'
+  - Sft+ 1
+  - {t: ESC, h: '`'}
   - '['
   - ;
   - Y
@@ -380,7 +380,7 @@ layers:
   - {t: BT, h: '0'}
   - BT CLR
   - TAB
-  - Meh+ Q
+  - ''
   - ''
   - ''
   - ''
@@ -538,61 +538,24 @@ combos:
   k: {t: LALT, h: sticky}
 - p: [25, 34]
   k: LGUI
-- p: [16, 15]
-  k: {t: Sft+ LCTRL, h: sticky}
-  l: [base_hrm, base_normal, extended]
-- p: [19, 20]
-  k: {t: Sft+ LCTRL, h: sticky}
-  l: [base_hrm, base_normal, extended]
-- p: [14, 15]
-  k: {t: Alt+ LCTRL, h: sticky}
-  l: [base_hrm, base_normal, extended]
-- p: [21, 20]
-  k: {t: Alt+ LCTRL, h: sticky}
-  l: [base_hrm, base_normal, extended]
-- p: [15, 14, 16]
-  k: {t: Alt+Sft+ LCTRL, h: sticky}
-  l: [base_hrm, base_normal, extended]
-- p: [20, 21, 19]
-  k: {t: Alt+Sft+ LCTRL, h: sticky}
-  l: [base_hrm, base_normal, extended]
 - p: [16, 29]
-  k: {t: LSHFT, h: toggle}
-  l: [base_hrm, base_normal, extended]
+  k: '&key_repeat'
 - p: [19, 30]
-  k: {t: LCTRL, h: toggle}
-  l: [base_hrm, base_normal, extended]
-- p: [18, 19]
-  k: {t: LGUI, h: toggle}
-  l: [base_hrm, base_normal, extended]
-- p: [16, 17]
-  k: {t: LALT, h: toggle}
-  l: [base_hrm, base_normal, extended]
-- p: [27, 26]
   k: '&key_repeat'
-  l: [base_hrm, base_normal, extended]
-- p: [33, 32]
-  k: '&key_repeat'
-  l: [base_hrm, base_normal, extended]
-- p: [25, 29]
+- p: [17, 16]
   k: SPACE
-- p: [34, 30]
+- p: [18, 19]
   k: ENTER
 - p: [45, 40]
   k: _
-  l: [base_hrm, base_normal, extended, extra]
 - p: [46, 39]
   k: /
-  l: [base_hrm, base_normal, extended, extra]
 - p: [38, 47]
   k: \
-  l: [base_hrm, base_normal, extended, extra]
 - p: [48, 37]
   k: '|'
-  l: [base_hrm, base_normal, extended, extra]
 - p: [29, 30]
   k: '&caps_word'
-  l: [base_hrm]
 - p: [7, 8]
   k: PP
 - p: [7, 6]
