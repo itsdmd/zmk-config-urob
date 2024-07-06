@@ -694,11 +694,11 @@
         layer_qwerty_mir {
             display-name = "qwerty-mir";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp N0    &kp N9    &kp N8     &kp N7     &kp N6                               &kp N5       &kp N4  &kp N3  &kp N2  &kp N1  &ht_capw CAPS 0
-&kp LBKT             &kp P     &kp O     &kp I      &kp U      &kp Y                                &kp T        &kp R   &kp E   &kp W   &kp Q   &kp TAB
-&kp DEL              &kp SEMI  &kp L     &kp K      &kp J      &kp H                                &kp G        &kp F   &kp D   &kp S   &kp A   &kp BSPC
-&kp PG_DN            &kp FSLH  &kp DOT   &kp COMMA  &kp M      &kp N        &kt LSHFT    &kt LCTRL  &kp B        &kp V   &kp C   &kp X   &kp Z   &kp PG_UP
-                               &kp LGUI  &kp LALT   &kp LSHFT  &lt 5 SPACE  &kp LCTRL    &td_S_CS   &lt 5 ENTER  &trans  &to 0   &trans
+&ht_kp_kp GRAVE ESC  &kp N0    &kp N9    &kp N8     &kp N7     &kp N6                               &kp N5       &kp N4     &kp N3    &kp N2  &kp N1  &ht_capw CAPS 0
+&kp LBKT             &kp P     &kp O     &kp I      &kp U      &kp Y                                &kp T        &kp R      &kp E     &kp W   &kp Q   &kp TAB
+&kp DEL              &kp SEMI  &kp L     &kp K      &kp J      &kp H                                &kp G        &kp F      &kp D     &kp S   &kp A   &kp BSPC
+&kp PG_DN            &kp FSLH  &kp DOT   &kp COMMA  &kp M      &kp N        &kt LSHFT    &kt LCTRL  &kp B        &kp V      &kp C     &kp X   &kp Z   &kp PG_UP
+                               &kp LGUI  &kp LALT   &kp LSHFT  &lt 5 SPACE  &kp LCTRL    &td_S_CS   &lt 5 ENTER  &kp LCTRL  &kp LALT  &to 0
             >;
 
             label = "QWERTY Mirrored";
