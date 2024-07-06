@@ -169,7 +169,7 @@
         combo_sk_lshft {
             bindings = <&sk LSHFT>;
             key-positions = <28 31>;
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <150>;
         };
@@ -177,15 +177,15 @@
         combo_sk_lctrl {
             bindings = <&sk LCTRL>;
             key-positions = <27 32>;
-            timeout-ms = <80>;
+            timeout-ms = <30>;
             slow-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <120>;
         };
 
         combo_sk_lalt {
             bindings = <&sk LALT>;
             key-positions = <26 33>;
-            timeout-ms = <80>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <150>;
         };
@@ -193,122 +193,30 @@
         combo_kp_gui {
             bindings = <&kp LGUI>;
             key-positions = <25 34>;
-            timeout-ms = <80>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
-        };
-
-        combo_CS_l {
-            bindings = <&sk LS(LCTRL)>;
-            key-positions = <16 15>;
-            require-prior-idle-ms = <170>;
-            timeout-ms = <80>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_CS_r {
-            bindings = <&sk LS(LCTRL)>;
-            key-positions = <19 20>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_CA_l {
-            bindings = <&sk LA(LCTRL)>;
-            key-positions = <14 15>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_CA_r {
-            bindings = <&sk LA(LCTRL)>;
-            key-positions = <21 20>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_CAS_l {
-            bindings = <&sk LA(LS(LCTRL))>;
-            key-positions = <15 14 16>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_CAS_r {
-            bindings = <&sk LA(LS(LCTRL))>;
-            key-positions = <20 21 19>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_kt_lshft {
-            bindings = <&kt LSHFT>;
-            key-positions = <16 29>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_kt_lctrl {
-            bindings = <&kt LCTRL>;
-            key-positions = <19 30>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <170>;
-            slow-release;
-            layers = <0 1 5>;
-        };
-
-        combo_kt_lgui {
-            bindings = <&kt LGUI>;
-            key-positions = <18 19>;
-            timeout-ms = <80>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-            layers = <0 1 5>;
-        };
-
-        combo_kt_lalt {
-            bindings = <&kt LALT>;
-            key-positions = <16 17>;
-            timeout-ms = <80>;
-            slow-release;
-            require-prior-idle-ms = <170>;
-            layers = <0 1 5>;
         };
 
         combo_repeat_l {
             bindings = <&key_repeat>;
-            key-positions = <27 26>;
-            timeout-ms = <50>;
+            key-positions = <16 29>;
+            timeout-ms = <30>;
             slow-release;
-            require-prior-idle-ms = <150>;
-            layers = <0 1 5>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_repeat_r {
             bindings = <&key_repeat>;
-            key-positions = <33 32>;
+            key-positions = <19 30>;
             slow-release;
-            require-prior-idle-ms = <150>;
-            timeout-ms = <50>;
-            layers = <0 1 5>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <30>;
         };
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <25 29>;
+            key-positions = <17 16>;
             slow-release;
             require-prior-idle-ms = <100>;
             timeout-ms = <50>;
@@ -316,7 +224,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <34 30>;
+            key-positions = <18 19>;
             slow-release;
             require-prior-idle-ms = <100>;
             timeout-ms = <50>;
@@ -325,52 +233,47 @@
         combo_under {
             bindings = <&kp UNDER>;
             key-positions = <45 40>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0 1 5 6>;
         };
 
         combo_fslh {
             bindings = <&kp FSLH>;
             key-positions = <46 39>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0 1 5 6>;
         };
 
         combo_bslh {
             bindings = <&kp BSLH>;
             key-positions = <38 47>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0 1 5 6>;
         };
 
         combo_pipe {
             bindings = <&kp PIPE>;
             key-positions = <48 37>;
-            timeout-ms = <170>;
+            timeout-ms = <80>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0 1 5 6>;
         };
 
         combo_capsw {
             bindings = <&caps_word>;
             key-positions = <29 30>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <170>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
             slow-release;
-            layers = <0>;
         };
 
         combo_playpause {
             bindings = <&kp C_PP>;
             key-positions = <7 8>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -378,7 +281,7 @@
         combo_prev {
             bindings = <&kp C_PREV>;
             key-positions = <7 6>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -386,7 +289,7 @@
         combo_next {
             bindings = <&kp C_NEXT>;
             key-positions = <9 8>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -394,7 +297,7 @@
         combo_volup {
             bindings = <&mm_alt_volup_briup>;
             key-positions = <3 4>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -402,7 +305,7 @@
         combo_voldn {
             bindings = <&mm_alt_voldn_bridn>;
             key-positions = <3 2>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -410,7 +313,7 @@
         combo_mute {
             bindings = <&kp C_MUTE>;
             key-positions = <2 1>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
@@ -534,18 +437,6 @@
             flavor = "tap-preferred";
         };
 
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <170>;
-            require-prior-idle-ms = <100>;
-            flavor = "balanced";
-        };
-
         mm_alt_volup_briup: mm_alt_volup_briup {
             compatible = "zmk,behavior-mod-morph";
             label = "MM / ALT | VOL_UP / BRI_UP";
@@ -663,6 +554,34 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        hrm_r: hrm_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <80>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <16 17 28 29 40 41 13 14 15 16 17 25 26 27 28 29 37 38 39 40 41>;
+        };
+
+        hrm_l: hrm_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <2000>;
+            quick-tap-ms = <80>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <18 19 21 22 30 31 32 33 34 44 45 46 47 48 20>;
+        };
     };
 
     keymap {
@@ -671,11 +590,11 @@
         layer_base_hrm {
             display-name = "base-hrm";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)    &kp LS(N4)    &kp LS(N5)                                   &kp LS(N6)   &kp LS(N7)    &kp LS(N8)     &kp UNDER    &kp BSLH  &ht_capw CAPS 0
-&kp TAB              &kp Q       &kp W              &kp F         &kp P         &kp G                                        &kp J        &kp L         &kp U          &kp Y        &kp SEMI  &ht_kp_kp LBRC LBKT
-&kp BSPC             &kp A       &hrm LEFT_ALT R    &hrm LCTRL S  &hrm LSHFT T  &kp D                                        &kp H        &hrm LSHFT N  &hrm LCTRL E   &hrm LALT I  &kp O     &kp APOS
-&kp PG_UP            &kp Z       &kp X              &kp C         &kp V         &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M         &kp COMMA      &kp DOT      &kp FSLH  &kp PG_DN
-                                 &kp LGUI           &kp LC(LEFT)  &kp DEL       &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB       &kp LC(RIGHT)  &to 1
+&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
+&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
+&kp BSPC             &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
+&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT    &kt LCTRL  &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
+                                    &kp LGUI           &kp LALT        &kp LC(LEFT)    &lt 5 ENTER  &lt 2 DEL    &lt 2 TAB  &lt 5 SPACE  &kp LC(RIGHT)   &kp LGUI        &to 1
             >;
 
             sensor-bindings =
@@ -688,10 +607,10 @@
         layer_base_normal {
             display-name = "base-normal";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp UNDER  &kp LS(N0)  &ht_capw CAPS 0
-&kp TAB              &kp Q       &kp W              &kp F       &kp P       &kp G                                        &kp J        &kp L       &kp U       &kp Y      &kp SEMI    &kp LBKT
-&kp BSPC             &kp A       &kp R              &kp S       &kp T       &kp D                                        &kp H        &kp N       &kp E       &kp I      &kp O       &kp APOS
-&kp PG_UP            &kp Z       &kp X              &kp C       &kp V       &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M       &kp COMMA   &kp DOT    &kp FSLH    &kp PG_DN
+&ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp UNDER  &kp BSLH  &ht_capw CAPS 0
+&kp TAB              &kp Q       &kp W              &kp F       &kp P       &kp G                                        &kp J        &kp L       &kp U       &kp Y      &kp SEMI  &kp LBKT
+&kp BSPC             &kp A       &kp R              &kp S       &kp T       &kp D                                        &kp H        &kp N       &kp E       &kp I      &kp O     &kp APOS
+&kp PG_UP            &kp Z       &kp X              &kp C       &kp V       &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M       &kp COMMA   &kp DOT    &kp FSLH  &kp PG_DN
                                  &kp LGUI           &kp LALT    &kp DEL     &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB     &kp LALT    &to 0
             >;
 
@@ -705,11 +624,11 @@
         layer_base_normal_mir {
             display-name = "base-normal-mir";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp UNDER  &kp LS(N0)  &ht_capw CAPS 0
-&kp LBKT             &kp SEMI    &kp Y              &kp U       &kp L       &kp J                                &kp G        &kp P       &kp F       &kp W      &kp Q       &kp TAB
-&kp APOS             &kp O       &kp I              &kp E       &kp N       &kp H                                &kp D        &kp T       &kp S       &kp R      &kp A       &kp BSPC
-&kp PG_DN            &kp FSLH    &kp DOT            &kp COMMA   &kp M       &kp K        &kt LSHFT    &kt LCTRL  &kp B        &kp V       &kp C       &kp X      &kp Z       &kp PG_UP
-                                 &kp LGUI           &kp LALT    &kp TAB     &lt 5 SPACE  &none        &none      &lt 5 ENTER  &kp DEL     &kp LALT    &kp LGUI
+&ht_capw CAPS 0  &kp BSLH  &kp UNDER  &kp LS(N8)  &kp LS(N7)  &kp LS(N6)                           &kp LS(N5)   &kp LS(N4)  &kp LS(N3)  &kp N2    &kp LS(N1)  &ht_kp_kp GRAVE ESC
+&kp LBKT         &kp SEMI  &kp Y      &kp U       &kp L       &kp J                                &kp G        &kp P       &kp F       &kp W     &kp Q       &kp TAB
+&kp APOS         &kp O     &kp I      &kp E       &kp N       &kp H                                &kp D        &kp T       &kp S       &kp R     &kp A       &kp BSPC
+&kp PG_DN        &kp FSLH  &kp DOT    &kp COMMA   &kp M       &kp K        &kt LSHFT    &kt LCTRL  &kp B        &kp V       &kp C       &kp X     &kp Z       &kp PG_UP
+                           &kp LGUI   &kp LALT    &kp TAB     &lt 5 SPACE  &none        &none      &lt 5 ENTER  &kp DEL     &kp LALT    &kp LGUI
             >;
 
             sensor-bindings =
@@ -772,11 +691,11 @@
         layer_extra {
             display-name = "extra";
             bindings = <
-&fuego 0 0  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &bt BT_SEL 4               &bt BT_SEL 3    &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
-&kp TAB     &kp LS(LC(LA(Q)))  &none         &none         &none         &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
-&kp BSPC    &none              &mkp MCLK     &mkp RCLK     &mkp LCLK     &kp C_BRI_DN                                &ht_kp_kp C_MUTE C_VOL_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc MOVE_UP
-&soft_off   &none              &none         &mkp MB5      &mkp MB4      &bootloader   &kp C_POWER    &kp C_RESET    &bootloader                &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT    &none            &soft_off
-                               &to 0         &sys_reset    &none         &kp ENTER     &kp C_SLEEP    &kp C_AL_LOCK  &kp SPACE                  &none           &sys_reset        &to 0
+&fuego 0 0  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &bt BT_SEL 4               &bt BT_SEL 3    &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
+&kp TAB     &none         &none         &none         &none         &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
+&kp BSPC    &none         &mkp MCLK     &mkp RCLK     &mkp LCLK     &kp C_BRI_DN                                &ht_kp_kp C_MUTE C_VOL_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc MOVE_UP
+&soft_off   &none         &none         &mkp MB5      &mkp MB4      &bootloader   &kp C_POWER    &kp C_RESET    &bootloader                &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT    &none            &soft_off
+                          &to 0         &sys_reset    &none         &kp ENTER     &kp C_SLEEP    &kp C_AL_LOCK  &kp SPACE                  &none           &sys_reset        &to 0
             >;
 
             label = "Extra";
