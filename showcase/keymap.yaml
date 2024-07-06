@@ -302,9 +302,9 @@ layers:
   - LCTRL
   - '&td_S_CS'
   - {t: ENTER, h: extended}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - LALT
   - {t: base_hrm, h: toggle}
-  - {t: ▽, type: trans}
   extended:
   - Alt+ F4
   - {t: F1, h: F13}
@@ -359,10 +359,10 @@ layers:
   - '&mkp MB3'
   - '&mkp MB2'
   - '&mkp MB1'
-  - {t: (, h: ), type: held}
-  - {t: <, h: '>'}
-  - {t: '[', h: ']'}
-  - {t: '{', h: '}'}
+  - {t: (, s: ), type: held}
+  - {t: <, s: '>'}
+  - {t: '[', s: ']'}
+  - {t: '{', s: '}'}
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
@@ -555,7 +555,7 @@ combos:
 - p: [48, 37]
   k: '|'
 - p: [29, 30]
-  k: '&caps_word'
+  k: '='
 - p: [7, 8]
   k: PP
 - p: [7, 6]
@@ -568,3 +568,5 @@ combos:
   k: {t: VOL DN, s: BRI DN}
 - p: [2, 1]
   k: MUTE
+- p: [17, 18]
+  k: '&caps_word'
