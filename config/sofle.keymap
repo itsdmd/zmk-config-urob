@@ -262,9 +262,9 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_capsw {
-            bindings = <&caps_word>;
-            key-positions = <29 30>;
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <44 41>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             slow-release;
@@ -316,6 +316,14 @@
             timeout-ms = <50>;
             slow-release;
             require-prior-idle-ms = <170>;
+        };
+
+        combo_capsw {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
 
