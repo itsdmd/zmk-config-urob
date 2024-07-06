@@ -580,7 +580,43 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <18 19 21 22 30 31 32 33 34 44 45 46 47 48 20>;
+            hold-trigger-key-positions = <18 19 21 22 30 31 32 33 34 44 45 46 47 48 20 37 38 39 40 41 15 14>;
+        };
+
+        mm_lpar_S_rpar: mm_lpar_S_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LPAR_S_RPAR";
+            bindings = <&kp LPAR>, <&kp RPAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_lbkt_S_rbkt: mm_lbkt_S_rbkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LBKT_S_RBKT";
+            bindings = <&kp LBKT>, <&kp RBKT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_lbrc_S_rbrc: mm_lbrc_S_rbrc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LBRC_S_RBRC";
+            bindings = <&kp LBRC>, <&kp RBRC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_jt_S_gt: mm_jt_S_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_JT_S_GT";
+            bindings = <&kp LT>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -674,11 +710,11 @@
         layer_extended {
             display-name = "extended";
             bindings = <
-&kp LA(F4)         &ht_kp_kp F13 F1           &ht_kp_kp F14 F2  &ht_kp_kp F15 F3  &ht_kp_kp F16 F4  &ht_kp_kp F17 F5                                                      &ht_kp_kp F18 F6        &ht_kp_kp F19 F7    &ht_kp_kp F20 F8       &ht_kp_kp F21 F9  &ht_kp_kp F22 F10     &kp PSCRN
-&macro_two_spaces  &kp ESC                    &mm_S_kp7_7       &mm_S_kp8_8       &mm_S_kp9_9       &ht_kp_kp F23 F11                                                     &ht_kp_kp F24 F12       &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK         &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
-&kp DEL            &mm_S_kp0_0                &mm_S_kp4_4       &mm_S_kp5_5       &mm_S_kp6_6       &kp EQUAL                                                             &kp HOME                &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
-&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1       &mm_S_kp2_2       &mm_S_kp3_3       &kp INS                 &kp C_AL_CALC         &kp C_AL_MY_COMPUTER    &kp SCROLLLOCK          &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
-                                              &mkp MB3          &mkp MB2          &mkp MB1          &ht170_kp_kp RPAR LPAR  &ht170_kp_kp GT LT    &ht170_kp_kp RBKT LBKT  &ht170_kp_kp RBRC LBRC  &mkp MB1            &mkp MB2               &mkp MB3
+&kp LA(F4)         &ht_kp_kp F13 F1           &ht_kp_kp F14 F2  &ht_kp_kp F15 F3  &ht_kp_kp F16 F4  &ht_kp_kp F17 F5                                          &ht_kp_kp F18 F6   &ht_kp_kp F19 F7    &ht_kp_kp F20 F8       &ht_kp_kp F21 F9  &ht_kp_kp F22 F10     &kp PSCRN
+&macro_two_spaces  &kp ESC                    &mm_S_kp7_7       &mm_S_kp8_8       &mm_S_kp9_9       &ht_kp_kp F23 F11                                         &ht_kp_kp F24 F12  &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK         &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
+&kp DEL            &mm_S_kp0_0                &mm_S_kp4_4       &mm_S_kp5_5       &mm_S_kp6_6       &kp EQUAL                                                 &kp HOME           &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
+&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1       &mm_S_kp2_2       &mm_S_kp3_3       &kp INS            &kp C_AL_CALC    &kp C_AL_MY_COMPUTER  &kp SCROLLLOCK     &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
+                                              &mkp MB3          &mkp MB2          &mkp MB1          &mm_lpar_S_rpar    &mm_jt_S_gt      &mm_lbkt_S_rbkt       &mm_lbrc_S_rbrc    &mkp MB1            &mkp MB2               &mkp MB3
             >;
 
             sensor-bindings =
