@@ -35,78 +35,74 @@
         combo_knobs_softoff {
             bindings = <&soft_off>;
             key-positions = <42 43>;
-            timeout-ms = <500>;
+            timeout-ms = <300>;
             slow-release;
             require-prior-idle-ms = <1000>;
         };
 
         combo_to_base_hrm_l {
             bindings = <&to 0>;
-            key-positions = <39 40>;
-            timeout-ms = <80>;
+            key-positions = <4 3>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <1 2 3 4 5 6>;
         };
 
         combo_to_base_hrm_r {
             bindings = <&to 0>;
-            key-positions = <45 46>;
-            timeout-ms = <80>;
+            key-positions = <7 8>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <1 2 3 4 5 6>;
         };
 
         combo_to_base_normal_l {
             bindings = <&to 1>;
-            key-positions = <40 38>;
-            timeout-ms = <80>;
+            key-positions = <2 4>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <0 2 3 4 5 6>;
         };
 
         combo_to_base_normal_r {
             bindings = <&to 1>;
-            key-positions = <45 47>;
-            timeout-ms = <80>;
+            key-positions = <7 9>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <0 2 3 4 5 6>;
         };
 
         combo_to_qwerty_l {
             bindings = <&to 3>;
-            key-positions = <37 38>;
+            key-positions = <1 2>;
             slow-release;
-            timeout-ms = <100>;
-            layers = <0 1 6 4 2 5>;
+            timeout-ms = <20>;
+            layers = <0 1 2 4 5 6>;
             require-prior-idle-ms = <300>;
         };
 
         combo_to_qwerty_r {
             bindings = <&to 3>;
-            key-positions = <48 47>;
-            timeout-ms = <100>;
+            key-positions = <10 9>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <0 1 6 4 2 5>;
+            layers = <0 1 2 4 5 6>;
         };
 
         combo_to_qwerty_mir_l {
             bindings = <&to 4>;
-            key-positions = <37 38>;
+            key-positions = <1 2>;
             slow-release;
-            timeout-ms = <100>;
+            timeout-ms = <20>;
             layers = <3>;
             require-prior-idle-ms = <300>;
         };
 
         combo_to_qwerty_mir_r {
             bindings = <&to 4>;
-            key-positions = <47 48>;
-            timeout-ms = <100>;
+            key-positions = <10 9>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
             layers = <3>;
@@ -114,70 +110,69 @@
 
         combo_to_extended_l {
             bindings = <&to 5>;
-            key-positions = <4 2 3>;
+            key-positions = <5 4>;
             slow-release;
-            timeout-ms = <120>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <300>;
         };
 
         combo_to_extended_r {
             bindings = <&to 5>;
-            key-positions = <7 8 9>;
-            timeout-ms = <120>;
+            key-positions = <7 6>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
 
         combo_to_extra_l {
             bindings = <&to 6>;
-            key-positions = <38 39>;
-            timeout-ms = <170>;
+            key-positions = <3 2>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
-            layers = <0 1 2 3 4 5>;
         };
 
         combo_to_extra_r {
             bindings = <&to 6>;
-            key-positions = <46 47>;
-            timeout-ms = <170>;
+            key-positions = <9 8>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <300>;
         };
 
         combo_mo_extra_1 {
             bindings = <&mo 6>;
-            key-positions = <53 24>;
-            timeout-ms = <120>;
-            require-prior-idle-ms = <250>;
+            key-positions = <53 36>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_mo_extra_2 {
             bindings = <&mo 6>;
-            key-positions = <56 35>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <250>;
+            key-positions = <56 49>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_mo_extra_3 {
             bindings = <&mo 6>;
             key-positions = <56 53>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <250>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <170>;
         };
 
         combo_sk_lshft {
             bindings = <&sk LSHFT>;
             key-positions = <28 31>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <120>;
         };
 
         combo_sk_lctrl {
             bindings = <&sk LCTRL>;
             key-positions = <27 32>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <120>;
         };
@@ -185,143 +180,263 @@
         combo_sk_lalt {
             bindings = <&sk LALT>;
             key-positions = <26 33>;
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <120>;
         };
 
         combo_kp_gui {
             bindings = <&kp LGUI>;
             key-positions = <25 34>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             slow-release;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_repeat_l {
             bindings = <&key_repeat>;
             key-positions = <16 29>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
         combo_repeat_r {
             bindings = <&key_repeat>;
-            key-positions = <19 30>;
+            key-positions = <30 19>;
             slow-release;
             require-prior-idle-ms = <100>;
-            timeout-ms = <30>;
+            timeout-ms = <20>;
         };
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <17 16>;
+            key-positions = <29 28>;
             slow-release;
-            require-prior-idle-ms = <100>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <18 19>;
+            key-positions = <30 31>;
             slow-release;
-            require-prior-idle-ms = <100>;
-            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            timeout-ms = <20>;
         };
 
         combo_under {
             bindings = <&kp UNDER>;
-            key-positions = <45 40>;
-            timeout-ms = <50>;
+            key-positions = <41 40>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
         combo_fslh {
             bindings = <&kp FSLH>;
-            key-positions = <46 39>;
-            timeout-ms = <50>;
+            key-positions = <32 45>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
         combo_bslh {
             bindings = <&kp BSLH>;
-            key-positions = <38 47>;
-            timeout-ms = <50>;
+            key-positions = <27 40>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
         combo_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <48 37>;
-            timeout-ms = <80>;
+            key-positions = <41 28>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
         combo_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <29 30>;
-            timeout-ms = <50>;
+            key-positions = <30 31>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <100>;
             slow-release;
         };
 
         combo_playpause {
             bindings = <&kp C_PP>;
-            key-positions = <7 8>;
-            timeout-ms = <50>;
+            key-positions = <7 19>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_prev {
             bindings = <&kp C_PREV>;
-            key-positions = <7 6>;
-            timeout-ms = <50>;
+            key-positions = <6 18>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_next {
             bindings = <&kp C_NEXT>;
-            key-positions = <9 8>;
-            timeout-ms = <50>;
+            key-positions = <8 20>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <170>;
         };
 
         combo_volup {
             bindings = <&mm_A_volup_briup>;
-            key-positions = <3 4>;
-            timeout-ms = <50>;
+            key-positions = <4 16>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_voldn {
             bindings = <&mm_A_voldn_bridn>;
-            key-positions = <3 2>;
-            timeout-ms = <50>;
+            key-positions = <3 15>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_mute {
             bindings = <&kp C_MUTE>;
-            key-positions = <2 1>;
-            timeout-ms = <50>;
+            key-positions = <2 14>;
+            timeout-ms = <20>;
             slow-release;
-            require-prior-idle-ms = <170>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_capsw {
             bindings = <&caps_word>;
-            key-positions = <17 18>;
-            timeout-ms = <50>;
+            key-positions = <17 29>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <170>;
+        };
+
+        combo_sk_shf_l {
+            bindings = <&sk LSHFT>;
+            key-positions = <16 28>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+        };
+
+        combo_sk_shf_r {
+            bindings = <&sk RSHFT>;
+            key-positions = <19 31>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+        };
+
+        combo_sk_ctr_l {
+            bindings = <&sk LCTRL>;
+            key-positions = <15 27>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+        };
+
+        combo_sk_ctr_r {
+            bindings = <&sk RCTRL>;
+            key-positions = <20 32>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+        };
+
+        combo_sk_alt_l {
+            bindings = <&sk LALT>;
+            key-positions = <14 26>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+        };
+
+        combo_sk_alt_r {
+            bindings = <&sk RALT>;
+            key-positions = <21 33>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <200>;
+        };
+
+        combo_lt {
+            bindings = <&kp LT>;
+            key-positions = <26 39>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_gt {
+            bindings = <&kp GT>;
+            key-positions = <46 33>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_excl {
+            bindings = <&kp EXCL>;
+            key-positions = <44 31>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <40 39>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <45 46>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <37 38>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <47 48>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <39 38>;
+            timeout-ms = <20>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <47 46>;
+            timeout-ms = <20>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -373,6 +488,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
+            quick-tap-ms = <170>;
         };
 
         td_S_CS: td_S_CS {
@@ -405,6 +521,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
         };
 
         fuego: fuego {
@@ -433,6 +550,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <500>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
         plus_equal: plus_equal {
@@ -588,7 +706,7 @@
             require-prior-idle-ms = <150>;
             flavor = "balanced";
             hold-trigger-on-release;
-            hold-trigger-key-positions = <18 19 21 22 30 31 32 33 34 44 45 46 47 48 20 37 38 39 40 41 15 14 23 35 49 55 56 57 58 59>;
+            hold-trigger-key-positions = <18 19 21 22 30 31 32 33 34 44 45 46 47 48 20 23 35 49 55 56 57 58 59>;
         };
 
         mm_S_lpar_rpar: mm_S_lpar_rpar {
@@ -758,6 +876,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        td_shf_moBaseMir: td_shf_moBaseMir {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHF_MOBASEMIR";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&mo 2>;
+
+            tapping-term-ms = <150>;
+        };
+
+        td_ctr_moBaseMir: td_ctr_moBaseMir {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CTR_MOBASEMIR";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&mo 2>;
+
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -766,11 +902,11 @@
         layer_base_hrm {
             display-name = "base-hrm";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                         &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
-&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                              &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
-&kp BSPC             &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                              &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
-&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT           &kt LCTRL         &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
-                                    &kp LGUI           &kp LALT        &kp LC(LEFT)    &lt 5 ENTER  &ht_mo_mmpar 2 0    &ht_mo_mmbrc 2 0  &lt 5 SPACE  &kp LC(RIGHT)   &kp LGUI        &to 1
+&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                      &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
+&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                           &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
+&kp BSPC             &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                           &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
+&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT         &kt LCTRL        &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
+                                    &kp LGUI           &kp LALT        &kp LCTRL       &lt 5 ENTER  &lt 2 LC(LEFT)    &lt 2 LC(RIGHT)  &lt 5 SPACE  &kp LSHFT       &kp LALT        &to 1
             >;
 
             sensor-bindings =
@@ -783,11 +919,11 @@
         layer_base_normal {
             display-name = "base-normal";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp UNDER  &kp BSLH  &ht_capw CAPS 0
-&kp TAB              &kp Q       &kp W              &kp F       &kp P       &kp G                                        &kp J        &kp L       &kp U       &kp Y      &kp SEMI  &kp LBKT
-&kp BSPC             &kp A       &kp R              &kp S       &kp T       &kp D                                        &kp H        &kp N       &kp E       &kp I      &kp O     &kp APOS
-&kp PG_UP            &kp Z       &kp X              &kp C       &kp V       &kp B        &kt LSHFT        &kt LCTRL      &kp K        &kp M       &kp COMMA   &kp DOT    &kp FSLH  &kp PG_DN
-                                 &kp LGUI           &kp LALT    &kp DEL     &lt 5 ENTER  &ht_mo_sl 2 7    &ht_mo_sl 2 7  &lt 5 SPACE  &kp TAB     &kp LALT    &to 0
+&ht_kp_kp GRAVE ESC  &kp LS(N1)  &email_1 0 LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                           &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp UNDER  &kp BSLH  &ht_capw CAPS 0
+&kp TAB              &kp Q       &kp W              &kp F       &kp P       &kp G                                                &kp J        &kp L       &kp U       &kp Y      &kp SEMI  &kp LBKT
+&kp BSPC             &kp A       &kp R              &kp S       &kp T       &kp D                                                &kp H        &kp N       &kp E       &kp I      &kp O     &kp APOS
+&kp PG_UP            &kp Z       &kp X              &kp C       &kp V       &kp B        &kt LSHFT            &kt LCTRL          &kp K        &kp M       &kp COMMA   &kp DOT    &kp FSLH  &kp PG_DN
+                                 &kp LGUI           &kp LALT    &kp LCTRL   &lt 5 ENTER  &td_shf_moBaseMir    &td_ctr_moBaseMir  &lt 5 SPACE  &kp LSHFT   &kp LALT    &to 0
             >;
 
             sensor-bindings =
@@ -800,11 +936,11 @@
         layer_base_normal_mir {
             display-name = "base-normal-mir";
             bindings = <
-&ht_capw CAPS 0  &kp BSLH  &kp UNDER  &kp LS(N8)  &kp LS(N7)  &kp LS(N6)                           &kp LS(N5)   &kp LS(N4)  &kp LS(N3)  &kp N2    &kp LS(N1)  &ht_kp_kp GRAVE ESC
-&kp LBKT         &kp SEMI  &kp Y      &kp U       &kp L       &kp J                                &kp G        &kp P       &kp F       &kp W     &kp Q       &kp TAB
-&kp APOS         &kp O     &kp I      &kp E       &kp N       &kp H                                &kp D        &kp T       &kp S       &kp R     &kp A       &kp BSPC
-&kp PG_DN        &kp FSLH  &kp DOT    &kp COMMA   &kp M       &kp K        &kt LSHFT    &kt LCTRL  &kp B        &kp V       &kp C       &kp X     &kp Z       &kp PG_UP
-                           &kp LGUI   &kp LALT    &kp TAB     &lt 5 SPACE  &none        &none      &lt 5 ENTER  &kp DEL     &kp LALT    &kp LGUI
+&ht_capw CAPS 0  &kp BSLH  &kp UNDER  &kp LS(N8)  &kp LS(N7)  &kp LS(N6)                           &kp LS(N5)   &kp LS(N4)  &kp LS(N3)  &email_1 0 LS(N2)  &kp LS(N1)  &ht_kp_kp GRAVE ESC
+&kp LBKT         &kp SEMI  &kp Y      &kp U       &kp L       &kp J                                &kp G        &kp P       &kp F       &kp W              &kp Q       &kp TAB
+&kp APOS         &kp O     &kp I      &kp E       &kp N       &kp H                                &kp D        &kp T       &kp S       &kp R              &kp A       &kp BSPC
+&kp PG_DN        &kp FSLH  &kp DOT    &kp COMMA   &kp M       &kp K        &kt LSHFT    &kt LCTRL  &kp B        &kp V       &kp C       &kp X              &kp Z       &kp PG_UP
+                           &kp LGUI   &kp LALT    &kp LSHFT   &lt 5 SPACE  &none        &none      &lt 5 ENTER  &kp LCTRL   &kp LALT    &kp LGUI
             >;
 
             sensor-bindings =
@@ -878,19 +1014,6 @@
             sensor-bindings =
                 <&inc_dec_kp LC(DEL) LC(BSPC)>,
                 <&inc_dec_kp DEL BSPC>;
-        };
-
-        layer_mods {
-            display-name = "mods";
-            bindings = <
-&none     &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
-&none     &none     &none     &none      &none      &none                           &none     &none      &none      &none     &none     &none
-&kp LGUI  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &none                           &none     &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI  &kp RGUI
-&none     &none     &kp LALT  &kp LCTRL  &kp LSHFT  &none     &none       &none     &none     &kp RSHFT  &kp RCTRL  &kp RALT  &none     &none
-                    &mkp MB5  &mkp MB4   &mkp MB2   &mkp MB1  &mkp MB3    &mkp MB3  &mkp MB1  &mkp MB2   &mkp MB4   &mkp MB5
-            >;
-
-            label = "Mods";
         };
     };
 };
