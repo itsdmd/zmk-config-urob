@@ -295,7 +295,7 @@
         };
 
         combo_volup {
-            bindings = <&mm_alt_volup_briup>;
+            bindings = <&mm_A_volup_briup>;
             key-positions = <3 4>;
             timeout-ms = <50>;
             slow-release;
@@ -303,7 +303,7 @@
         };
 
         combo_voldn {
-            bindings = <&mm_alt_voldn_bridn>;
+            bindings = <&mm_A_voldn_bridn>;
             key-positions = <3 2>;
             timeout-ms = <50>;
             slow-release;
@@ -445,22 +445,22 @@
             flavor = "tap-preferred";
         };
 
-        mm_alt_volup_briup: mm_alt_volup_briup {
+        mm_A_volup_briup: mm_A_volup_briup {
             compatible = "zmk,behavior-mod-morph";
             label = "MM / ALT | VOL_UP / BRI_UP";
             bindings = <&kp C_VOL_UP>, <&kp C_BRI_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
 
-        mm_alt_voldn_bridn: mm_alt_voldn_bridn {
+        mm_A_voldn_bridn: mm_A_voldn_bridn {
             compatible = "zmk,behavior-mod-morph";
             label = "MM / ALT | VOLDN / BRIDN";
             bindings = <&kp C_VOL_DN>, <&kp C_BRI_DN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         ht_mo_sl: ht_mo_sl {
@@ -569,7 +569,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <2000>;
+            tapping-term-ms = <1000>;
             quick-tap-ms = <80>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -583,7 +583,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <2000>;
+            tapping-term-ms = <1000>;
             quick-tap-ms = <80>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -591,40 +591,68 @@
             hold-trigger-key-positions = <18 19 21 22 30 31 32 33 34 44 45 46 47 48 20 37 38 39 40 41 15 14 23 35 49 55 56 57 58 59>;
         };
 
-        mm_lpar_S_rpar: mm_lpar_S_rpar {
+        mm_S_lpar_rpar: mm_S_lpar_rpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_LPAR_S_RPAR";
+            label = "MM / SHF | LPAR / RPAR";
             bindings = <&kp LPAR>, <&kp RPAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_lbkt_S_rbkt: mm_lbkt_S_rbkt {
+        mm_S_lbkt_rbkt: mm_S_lbkt_rbkt {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_LBKT_S_RBKT";
+            label = "MM / SHF | LBKT / RBKT";
             bindings = <&kp LBKT>, <&kp RBKT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_lbrc_S_rbrc: mm_lbrc_S_rbrc {
+        mm_S_lbrc_rbrc: mm_S_lbrc_rbrc {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_LBRC_S_RBRC";
+            label = "MM / SHF | LBRC / RBRC";
             bindings = <&kp LBRC>, <&kp RBRC>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_jt_S_gt: mm_jt_S_gt {
+        mm_S_lt_gt: mm_S_lt_gt {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_JT_S_GT";
+            label = "MM / SHF | LT / GT";
             bindings = <&kp LT>, <&kp GT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ht_mo_mmpar: ht_mo_mmpar {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO_MMPAR";
+            bindings = <&mo>, <&mm_S_lpar_rpar>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <18 19 20 21 22 30 31 32 33 34 44 45 46 47 48 23 35 49 56 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 44 45 46 47 48 49 55 56 57 58 59>;
+            flavor = "balanced";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <170>;
+            hold-trigger-on-release;
+        };
+
+        ht_mo_mmbrc: ht_mo_mmbrc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO_MMBRC";
+            bindings = <&mo>, <&mm_S_lbrc_rbrc>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <1000>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <170>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 50 51 52 53 54>;
         };
     };
 
@@ -634,11 +662,11 @@
         layer_base_hrm {
             display-name = "base-hrm";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
-&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
-&kp BSPC             &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
-&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT    &kt LCTRL  &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
-                                    &kp LGUI           &kp LALT        &kp LC(LEFT)    &lt 5 ENTER  &lt 2 DEL    &lt 2 TAB  &lt 5 SPACE  &kp LC(RIGHT)   &kp LGUI        &to 1
+&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                         &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
+&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                              &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
+&kp BSPC             &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                              &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
+&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT           &kt LCTRL         &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
+                                    &kp LGUI           &kp LALT        &kp LC(LEFT)    &lt 5 ENTER  &ht_mo_mmpar 2 0    &ht_mo_mmbrc 2 0  &lt 5 SPACE  &kp LC(RIGHT)   &kp LGUI        &to 1
             >;
 
             sensor-bindings =
@@ -722,7 +750,7 @@
 &macro_two_spaces  &kp ESC                    &mm_S_kp7_7       &mm_S_kp8_8       &mm_S_kp9_9       &ht_kp_kp F23 F11                                         &ht_kp_kp F24 F12  &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK         &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
 &kp DEL            &mm_S_kp0_0                &mm_S_kp4_4       &mm_S_kp5_5       &mm_S_kp6_6       &kp EQUAL                                                 &kp HOME           &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
 &kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1       &mm_S_kp2_2       &mm_S_kp3_3       &kp INS            &kp C_AL_CALC    &kp C_AL_MY_COMPUTER  &kp SCROLLLOCK     &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
-                                              &mkp MB3          &mkp MB2          &mkp MB1          &mm_lpar_S_rpar    &mm_jt_S_gt      &mm_lbkt_S_rbkt       &mm_lbrc_S_rbrc    &mkp MB1            &mkp MB2               &mkp MB3
+                                              &mkp MB3          &mkp MB2          &mkp MB1          &mm_S_lpar_rpar    &mm_S_lt_gt      &mm_S_lbkt_rbkt       &mm_S_lbrc_rbrc    &mkp MB1            &mkp MB2               &mkp MB3
             >;
 
             sensor-bindings =
