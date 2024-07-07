@@ -251,7 +251,7 @@
 
         combo_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <33 46>;
+            key-positions = <44 45>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -387,7 +387,7 @@
 
         combo_excl {
             bindings = <&kp EXCL>;
-            key-positions = <29 41>;
+            key-positions = <41 40>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
