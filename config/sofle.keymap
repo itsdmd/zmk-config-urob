@@ -227,7 +227,7 @@
 
         combo_under {
             bindings = <&kp UNDER>;
-            key-positions = <41 28>;
+            key-positions = <27 40>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -235,7 +235,7 @@
 
         combo_fslh {
             bindings = <&kp FSLH>;
-            key-positions = <32 45>;
+            key-positions = <31 44>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -243,7 +243,7 @@
 
         combo_bslh {
             bindings = <&kp BSLH>;
-            key-positions = <27 40>;
+            key-positions = <28 41>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -251,7 +251,7 @@
 
         combo_pipe {
             bindings = <&kp PIPE>;
-            key-positions = <41 29>;
+            key-positions = <33 46>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -259,7 +259,7 @@
 
         combo_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <30 31>;
+            key-positions = <32 45>;
             timeout-ms = <30>;
             require-prior-idle-ms = <100>;
             slow-release;
@@ -387,7 +387,7 @@
 
         combo_excl {
             bindings = <&kp EXCL>;
-            key-positions = <44 30>;
+            key-positions = <29 41>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -436,6 +436,14 @@
         combo_rbrc {
             bindings = <&kp RBRC>;
             key-positions = <47 46>;
+            timeout-ms = <30>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <44 30>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
