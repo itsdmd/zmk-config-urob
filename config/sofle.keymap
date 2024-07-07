@@ -745,30 +745,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        ht_mo_mmpar: ht_mo_mmpar {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO_MMPAR";
-            bindings = <&mo>, <&mm_S_lpar_rpar>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <170>;
-        };
-
-        ht_mo_mmbrc: ht_mo_mmbrc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO_MMBRC";
-            bindings = <&mo>, <&mm_S_lbrc_rbrc>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-            require-prior-idle-ms = <170>;
-        };
-
         mm_S_f1_f13: mm_S_f1_f13 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_S_F1_F13";
@@ -894,6 +870,35 @@
 
             tapping-term-ms = <150>;
         };
+
+        mm_S_bspc_del: mm_S_bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_BSPC_DEL";
+            bindings = <&kp BSPC>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ht170_mo_mmbspc: ht170_mo_mmbspc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT170_MO_MMBSPC";
+            bindings = <&mo>, <&mm_S_bspc_del>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <120>;
+            flavor = "hold-preferred";
+        };
+
+        td_pgdn_pgup: td_pgdn_pgup {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_PGDN_PGUP";
+            #binding-cells = <0>;
+            bindings = <&kp PG_DN>, <&kp PG_UP>;
+
+            tapping-term-ms = <120>;
+        };
     };
 
     keymap {
@@ -904,9 +909,9 @@
             bindings = <
 &ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                      &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
 &kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                           &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
-&kp BSPC             &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                           &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
-&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT         &kt LCTRL        &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
-                                    &kp LGUI           &kp LALT        &kp LCTRL       &lt 5 ENTER  &lt 2 LC(LEFT)    &lt 2 LC(RIGHT)  &lt 5 SPACE  &kp LSHFT       &kp LALT        &to 1
+&mm_S_bspc_del       &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                           &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
+&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT    &kt LCTRL             &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
+                                    &kp LGUI           &kp LALT        &kp LCTRL       &lt 5 ENTER  &lt 2 TAB    &ht170_mo_mmbspc 2 0  &lt 5 SPACE  &kp LSHFT       &kp LALT        &to 1
             >;
 
             sensor-bindings =
@@ -955,8 +960,8 @@
             bindings = <
 &ht_kp_kp GRAVE ESC  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                               &kp N6       &kp N7     &kp N8     &kp N9   &kp N0    &ht_capw CAPS 0
 &kp TAB              &kp Q   &kp W     &kp E     &kp R      &kp T                                &kp Y        &kp U      &kp I      &kp O    &kp P     &kp LBKT
-&kt BSPC             &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
-&kp PG_UP            &kp Z   &kp X     &kp C     &kp V      &kp B        &kt LSHFT    &kt LCTRL  &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+&mm_S_bspc_del       &kp A   &kp S     &kp D     &kp F      &kp G                                &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT            &kp Z   &kp X     &kp C     &kp V      &kp B        &kt LSHFT    &kt LCTRL  &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &td_pgdn_pgup
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 5 ENTER  &kp LSHFT    &td_C_CA   &lt 5 SPACE  &kp LSHFT  &kp LALT   &to 0
             >;
 
@@ -972,7 +977,7 @@
             bindings = <
 &ht_kp_kp GRAVE ESC  &kp N0    &kp N9    &kp N8     &kp N7     &kp N6                               &kp N5       &kp N4     &kp N3    &kp N2  &kp N1  &ht_capw CAPS 0
 &kp LBKT             &kp P     &kp O     &kp I      &kp U      &kp Y                                &kp T        &kp R      &kp E     &kp W   &kp Q   &kp TAB
-&kp DEL              &kp SEMI  &kp L     &kp K      &kp J      &kp H                                &kp G        &kp F      &kp D     &kp S   &kp A   &kp BSPC
+&kp SQT              &kp SEMI  &kp L     &kp K      &kp J      &kp H                                &kp G        &kp F      &kp D     &kp S   &kp A   &kp BSPC
 &kp PG_DN            &kp FSLH  &kp DOT   &kp COMMA  &kp M      &kp N        &kt LSHFT    &kt LCTRL  &kp B        &kp V      &kp C     &kp X   &kp Z   &kp PG_UP
                                &kp LGUI  &kp LALT   &kp LSHFT  &lt 5 SPACE  &kp LCTRL    &td_S_CS   &lt 5 ENTER  &kp LCTRL  &kp LALT  &to 0
             >;
@@ -1003,11 +1008,11 @@
         layer_extra {
             display-name = "extra";
             bindings = <
-&fuego 0 0  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &bt BT_SEL 4               &bt BT_SEL 3    &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
-&kp TAB     &none         &none         &none         &none         &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
-&kp BSPC    &none         &mkp MCLK     &mkp RCLK     &mkp LCLK     &kp C_BRI_DN                                &ht_kp_kp C_MUTE C_VOL_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc MOVE_UP
-&soft_off   &none         &none         &mkp MB5      &mkp MB4      &bootloader   &kp C_POWER    &kp C_RESET    &bootloader                &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT    &none            &soft_off
-                          &to 0         &sys_reset    &none         &kp ENTER     &kp C_SLEEP    &kp C_AL_LOCK  &kp SPACE                  &none           &sys_reset        &to 0
+&fuego 0 0      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &bt BT_SEL 4               &bt BT_SEL 3    &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
+&kp TAB         &none         &none         &none         &none         &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
+&mm_S_bspc_del  &none         &mkp MCLK     &mkp RCLK     &mkp LCLK     &kp C_BRI_DN                                &ht_kp_kp C_MUTE C_VOL_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc MOVE_UP
+&soft_off       &none         &none         &mkp MB5      &mkp MB4      &bootloader   &kp C_POWER    &kp C_RESET    &bootloader                &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT    &none            &soft_off
+                              &to 0         &sys_reset    &none         &kp ENTER     &kp C_SLEEP    &kp C_AL_LOCK  &kp SPACE                  &none           &sys_reset        &to 0
             >;
 
             label = "Extra";
