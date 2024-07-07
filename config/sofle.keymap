@@ -654,6 +654,114 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 50 51 52 53 54>;
         };
+
+        mm_S_f1_f13: mm_S_f1_f13 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F1_F13";
+            bindings = <&kp F1>, <&kp F13>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f2_f14: mm_S_f2_f14 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F2_F14";
+            bindings = <&kp F2>, <&kp F14>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f3_f15: mm_S_f3_f15 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F3_F15";
+            bindings = <&kp F3>, <&kp F15>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f4_f16: mm_S_f4_f16 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F4_F16";
+            bindings = <&kp F4>, <&kp F16>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f5_f17: mm_S_f5_f17 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F5_F17";
+            bindings = <&kp F5>, <&kp F17>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f6_f18: mm_S_f6_f18 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F6_F18";
+            bindings = <&kp F6>, <&kp F18>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f7_f19: mm_S_f7_f19 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F7_F19";
+            bindings = <&kp F7>, <&kp F19>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f8_f20: mm_S_f8_f20 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F8_F20";
+            bindings = <&kp F8>, <&kp F20>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f9_f21: mm_S_f9_f21 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F9_F21";
+            bindings = <&kp F9>, <&kp F21>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f10_f22: mm_S_f10_f22 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F10_F22";
+            bindings = <&kp F10>, <&kp F22>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f11_f23: mm_S_f11_f23 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F11_F23";
+            bindings = <&kp F11>, <&kp F23>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_S_f12_f24: mm_S_f12_f24 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_S_F12_F24";
+            bindings = <&kp F12>, <&kp F24>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -746,11 +854,11 @@
         layer_extended {
             display-name = "extended";
             bindings = <
-&kp LA(F4)         &ht_kp_kp F13 F1           &ht_kp_kp F14 F2  &ht_kp_kp F15 F3  &ht_kp_kp F16 F4  &ht_kp_kp F17 F5                                          &ht_kp_kp F18 F6   &ht_kp_kp F19 F7    &ht_kp_kp F20 F8       &ht_kp_kp F21 F9  &ht_kp_kp F22 F10     &kp PSCRN
-&macro_two_spaces  &kp ESC                    &mm_S_kp7_7       &mm_S_kp8_8       &mm_S_kp9_9       &ht_kp_kp F23 F11                                         &ht_kp_kp F24 F12  &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK         &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
-&kp DEL            &mm_S_kp0_0                &mm_S_kp4_4       &mm_S_kp5_5       &mm_S_kp6_6       &kp EQUAL                                                 &kp HOME           &kp LEFT            &kp DOWN               &kp UP            &kp RIGHT             &kp END
-&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1       &mm_S_kp2_2       &mm_S_kp3_3       &kp INS            &kp C_AL_CALC    &kp C_AL_MY_COMPUTER  &kp SCROLLLOCK     &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP      &kp BSLH              &kp PG_UP
-                                              &mkp MB3          &mkp MB2          &mkp MB1          &mm_S_lpar_rpar    &mm_S_lt_gt      &mm_S_lbkt_rbkt       &mm_S_lbrc_rbrc    &mkp MB1            &mkp MB2               &mkp MB3
+&kp LA(F4)         &mm_S_f1_f13               &mm_S_f2_f14  &mm_S_f3_f15  &mm_S_f4_f16  &mm_S_f5_f17                                            &mm_S_f6_f18     &mm_S_f7_f19        &mm_S_f8_f20           &mm_S_f9_f21  &mm_S_f10_f22         &kp PSCRN
+&macro_two_spaces  &kp ESC                    &mm_S_kp7_7   &mm_S_kp8_8   &mm_S_kp9_9   &mm_S_f11_f23                                           &mm_S_f12_f24    &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK     &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
+&kp DEL            &mm_S_kp0_0                &mm_S_kp4_4   &mm_S_kp5_5   &mm_S_kp6_6   &kp EQUAL                                               &kp HOME         &kp LEFT            &kp DOWN               &kp UP        &kp RIGHT             &kp END
+&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1   &mm_S_kp2_2   &mm_S_kp3_3   &kp INS          &kp C_AL_CALC    &kp C_AL_MY_COMPUTER  &kp SCROLLLOCK   &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP  &kp BSLH              &kp PG_UP
+                                              &mkp MB3      &mkp MB2      &mkp MB1      &mm_S_lpar_rpar  &mm_S_lt_gt      &mm_S_lbkt_rbkt       &mm_S_lbrc_rbrc  &mkp MB1            &mkp MB2               &mkp MB3
             >;
 
             sensor-bindings =
