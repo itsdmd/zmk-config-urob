@@ -5,7 +5,7 @@
 #include <behaviors/mouse_keys.dtsi>
 
 &mmv {
-  acceleration-exponent = <0>;      // 1
+  acceleration-exponent = <10>;      // 1
   time-to-max-speed-ms = <50>;      // 40
   delay-ms = <0>;                   // 0
 };
