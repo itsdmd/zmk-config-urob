@@ -202,7 +202,7 @@
 
         combo_capsw {
             bindings = <&caps_word>;
-            key-positions = <17 29>;
+            key-positions = <29 30>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <170>;
