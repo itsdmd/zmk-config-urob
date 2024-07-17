@@ -914,11 +914,11 @@
         layer_base_hrm {
             display-name = "base-hrm";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                                      &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
-&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                           &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
-&mm_S_bspc_del       &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                           &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
-&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT    &kt LCTRL             &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
-                                    &kp LGUI           &kp LALT        &kp LCTRL       &lt 5 ENTER  &lt 2 TAB    &ht170_mo_mmbspc 2 0  &lt 5 SPACE  &kp LSHFT       &kp LALT        &to 1
+&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                             &kp LS(N6)   &kp LS(N7)      &kp LS(N8)      &kp UNDER      &kp BSLH       &ht_capw CAPS 0
+&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                  &kp J        &kp L           &kp U           &kp Y          &kp SEMI       &ht_kp_kp LBRC LBKT
+&mm_S_bspc_del       &hrm_l LGUI A  &hrm_l LEFT_ALT R  &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                  &kp H        &hrm_r LSHFT N  &hrm_r LCTRL E  &hrm_r LALT I  &hrm_r LGUI O  &kp APOS
+&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT    &kt LCTRL    &kp K        &kp M           &kp COMMA       &kp DOT        &kp FSLH       &kp PG_DN
+                                    &kp LGUI           &kp LALT        &kp LCTRL       &lt 5 ENTER  &lt 2 TAB    &lt 2 DEL    &lt 5 SPACE  &kp LSHFT       &kp LALT        &to 1
             >;
 
             sensor-bindings =
@@ -1001,7 +1001,7 @@
 &kp LA(F4)         &mm_S_f1_f13               &mm_S_f2_f14  &mm_S_f3_f15  &mm_S_f4_f16  &mm_S_f5_f17                                            &mm_S_f6_f18     &mm_S_f7_f19        &mm_S_f8_f20           &mm_S_f9_f21  &mm_S_f10_f22         &kp PSCRN
 &macro_two_spaces  &kp ESC                    &mm_S_kp7_7   &mm_S_kp8_8   &mm_S_kp9_9   &mm_S_f11_f23                                           &mm_S_f12_f24    &plus_equal 0 PLUS  &ht_kp_kp UNDER MINUS  &kp ASTRK     &ht_kp_kp QMARK FSLH  &ht_kp_kp RBRC RBKT
 &kp DEL            &mm_S_kp0_0                &mm_S_kp4_4   &mm_S_kp5_5   &mm_S_kp6_6   &kp EQUAL                                               &kp HOME         &kp LEFT            &kp DOWN               &kp UP        &kp RIGHT             &kp END
-&kp PG_DN          &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1   &mm_S_kp2_2   &mm_S_kp3_3   &kp INS          &kp C_AL_CALC    &kp C_AL_MY_COMPUTER  &kp SCROLLLOCK   &kp KP_NUMLOCK      &msc SCRL_DOWN         &msc SCRL_UP  &kp BSLH              &kp PG_UP
+&msc SCRL_UP       &ht_kp_kp LS(GRAVE) GRAVE  &mm_S_kp1_1   &mm_S_kp2_2   &mm_S_kp3_3   &kp INS          &kp C_AL_CALC    &kp C_AL_MY_COMPUTER  &kp SCROLLLOCK   &kp KP_NUMLOCK      &trans                 &trans        &kp BSLH              &msc SCRL_DOWN
                                               &mkp MB3      &mkp MB2      &mkp MB1      &mm_S_lpar_rpar  &mm_S_lt_gt      &mm_S_lbkt_rbkt       &mm_S_lbrc_rbrc  &mkp MB1            &mkp MB2               &mkp MB3
             >;
 
