@@ -567,7 +567,7 @@
                 <&macro_press>,
                 <&kp LSHIFT>,
                 <&macro_tap>,
-                <&kp DOWN &kp HOME &kp UP>,
+                <&kp DOWN &kp HOME &kp LEFT>,
                 <&macro_release>,
                 <&kp LSHFT>;
 
