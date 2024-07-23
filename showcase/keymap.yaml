@@ -25,7 +25,7 @@ layers:
   - Y
   - ;
   - {t: '[', h: '{'}
-  - {t: BSPC, s: DEL}
+  - {t: BSPC, s: '&macro_ctrl_bksp'}
   - {t: A, h: LGUI}
   - {t: R, h: LEFT ALT}
   - {t: S, h: LCTRL}
@@ -53,13 +53,13 @@ layers:
   - PG DN
   - LGUI
   - LALT
-  - LCTRL
+  - '&macro_ctrl_left'
   - {t: ENTER, h: extended}
+  - {t: DEL, h: base_normal_mir}
   - {t: TAB, h: base_normal_mir}
-  - {t: BSPC, h: base_normal_mir, s: DEL}
   - {t: SPACE, h: extended}
-  - LSHFT
-  - LALT
+  - '&macro_ctrl_right'
+  - {t: Sft+ LCTRL, h: toggle}
   - {t: base_normal, h: toggle}
   base_normal:
   - {t: ESC, h: '`'}
@@ -182,7 +182,7 @@ layers:
   - {t: ENTER, h: extended}
   - LCTRL
   - LALT
-  - LGUI
+  - {t: base_hrm, h: toggle}
   qwerty:
   - {t: ESC, h: '`'}
   - '1'
@@ -208,7 +208,7 @@ layers:
   - O
   - P
   - '['
-  - {t: BSPC, s: DEL}
+  - {t: BSPC, s: '&macro_ctrl_bksp'}
   - A
   - S
   - D
@@ -281,7 +281,7 @@ layers:
   - S
   - A
   - BSPC
-  - PG DN
+  - '&td_pgdn_pgup'
   - /
   - .
   - ','
@@ -294,7 +294,7 @@ layers:
   - C
   - X
   - Z
-  - PG UP
+  - LSHFT
   - LGUI
   - LALT
   - LSHFT
@@ -307,28 +307,28 @@ layers:
   - {t: base_hrm, h: toggle}
   extended:
   - Alt+ F4
-  - {t: F1, s: F13}
-  - {t: F2, s: F14}
-  - {t: F3, s: F15}
-  - {t: F4, s: F16}
-  - {t: F5, s: F17}
-  - {t: F6, s: F18}
-  - {t: F7, s: F19}
-  - {t: F8, s: F20}
-  - {t: F9, s: F21}
-  - {t: F10, s: F22}
+  - {t: F1, h: F13}
+  - {t: F2, h: F14}
+  - {t: F3, h: F15}
+  - {t: F4, h: F16}
+  - {t: F5, h: F17}
+  - {t: F6, h: F18}
+  - {t: F7, h: F19}
+  - {t: F8, h: F20}
+  - {t: F9, h: F21}
+  - {t: F10, h: F22}
   - PSCRN
   - '&macro_two_spaces'
   - ESC
   - {t: KP 7, s: Sft+ 7}
   - {t: KP 8, s: Sft+ 8}
   - {t: KP 9, s: Sft+ 9}
-  - {t: F11, s: F23}
-  - {t: F12, s: F24}
+  - {t: F11, h: F23}
+  - {t: F12, h: F24}
   - {t: +, h: '&macro_plus_equal'}
-  - {t: '-', h: _}
-  - '*'
-  - {t: /, h: '?'}
+  - {t: '-', h: '&macro_minus_equal'}
+  - {t: '*', h: '&macro_mult_equal'}
+  - {t: /, h: '&macro_div_equal'}
   - {t: ']', h: '}'}
   - DEL
   - {t: KP 0, s: Sft+ 0}
@@ -342,7 +342,7 @@ layers:
   - UP
   - RIGHT
   - END
-  - PG DN
+  - '&msc SCRL_UP'
   - {t: '`', h: Sft+ `}
   - {t: KP 1, s: Sft+ 1}
   - {t: KP 2, s: Sft+ 2}
@@ -352,10 +352,10 @@ layers:
   - AL MY COMPUTER
   - SCROLLLOCK
   - KP NUMLOCK
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - \
-  - PG UP
+  - '&msc SCRL_DOWN'
   - '&mkp MB3'
   - '&mkp MB2'
   - '&mkp MB1'
@@ -365,9 +365,9 @@ layers:
   - {t: '{', s: '}'}
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&mkp MB3'
+  - {t: base_hrm, h: toggle}
   extra:
-  - {t: '&macro_superhot', h: '&macro_hyperheat'}
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -380,7 +380,7 @@ layers:
   - {t: BT, h: '0'}
   - BT CLR
   - TAB
-  - ''
+  - {t: '&macro_superhot', h: '&macro_hyperheat'}
   - ''
   - ''
   - ''
@@ -391,7 +391,7 @@ layers:
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
   - '&msc MOVE_DOWN'
-  - {t: BSPC, s: DEL}
+  - {t: BSPC, s: '&macro_ctrl_bksp'}
   - ''
   - '&mkp MCLK'
   - '&mkp RCLK'
@@ -403,28 +403,28 @@ layers:
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
   - '&msc MOVE_UP'
-  - {t: '&soft_off', type: held}
+  - {t: OUT TOG, type: held}
   - ''
   - ''
   - '&mkp MB5'
   - '&mkp MB4'
-  - '&bootloader'
+  - ''
   - POWER
   - RESET
-  - '&bootloader'
+  - ''
   - PREV
   - PLAY PAUSE
   - NEXT
   - ''
+  - OUT TOG
   - '&soft_off'
-  - {t: base_hrm, h: toggle}
   - '&sys_reset'
-  - ''
+  - '&bootloader'
   - {t: ENTER, type: held}
   - SLEEP
   - AL LOCK
   - SPACE
-  - ''
+  - '&bootloader'
   - '&sys_reset'
   - {t: base_hrm, h: toggle}
 combos:
@@ -474,7 +474,7 @@ combos:
   k: LGUI
 - p: [44, 30]
   k: ESC
-- p: [17, 29]
+- p: [29, 30]
   k: '&caps_word'
 - p: [16, 28]
   k: {t: LSHFT, h: sticky}
@@ -536,3 +536,9 @@ combos:
   k: {t: VOL DN, s: BRI DN}
 - p: [2, 14]
   k: MUTE
+- p: [13, 25]
+  k: {t: LGUI, h: sticky}
+- p: [22, 34]
+  k: {t: RGUI, h: sticky}
+- p: [17, 18]
+  k: CAPS
