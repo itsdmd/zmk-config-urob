@@ -1061,7 +1061,7 @@
             display-name = "extra";
             bindings = <
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &bt BT_SEL 4               &bt BT_SEL 3    &bt BT_SEL 2      &bt BT_SEL 1  &bt BT_SEL 0     &bt BT_CLR
-&kp TAB       &fuego 0 0    &none         &none         &none         &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
+&kp TAB       &fuego 0 0    &kt LALT      &kt LCTRL     &kt LSHFT     &kp C_BRI_UP                                &kp C_VOL_UP               &msc SCRL_LEFT  &msc SCRL_DOWN    &msc SCRL_UP  &msc SCRL_RIGHT  &msc MOVE_DOWN
 &none         &none         &mkp MCLK     &mkp RCLK     &mkp LCLK     &kp C_BRI_DN                                &ht_kp_kp C_MUTE C_VOL_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc MOVE_UP
 &out OUT_TOG  &none         &none         &mkp MB5      &mkp MB4      &none         &kp C_POWER    &kp C_RESET    &none                      &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT    &none            &out OUT_TOG
                             &soft_off     &sys_reset    &bootloader   &kp ENTER     &kp C_SLEEP    &kp C_AL_LOCK  &kp SPACE                  &bootloader     &sys_reset        &to 0
