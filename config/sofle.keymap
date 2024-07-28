@@ -142,14 +142,14 @@
 
         combo_mo_extra_1 {
             bindings = <&mo 6>;
-            key-positions = <53 36>;
+            key-positions = <53 24>;
             timeout-ms = <70>;
             require-prior-idle-ms = <200>;
         };
 
         combo_mo_extra_2 {
             bindings = <&mo 6>;
-            key-positions = <56 49>;
+            key-positions = <56 35>;
             timeout-ms = <70>;
             require-prior-idle-ms = <200>;
         };
