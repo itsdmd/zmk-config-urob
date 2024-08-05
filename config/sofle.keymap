@@ -469,6 +469,15 @@
             bindings = <&kp CAPS>;
             key-positions = <17 18>;
         };
+
+        combo_mkp_mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <51 58>;
+            layers = <0>;
+            timeout-ms = <170>;
+            require-prior-idle-ms = <200>;
+            slow-release;
+        };
     };
 
     macros {
