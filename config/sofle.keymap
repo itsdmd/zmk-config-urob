@@ -372,7 +372,7 @@
         combo_lbkt {
             bindings = <&kp LBKT>;
             key-positions = <37 38>;
-            timeout-ms = <30>;
+            timeout-ms = <70>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -380,7 +380,7 @@
         combo_rbkt {
             bindings = <&kp RBKT>;
             key-positions = <47 48>;
-            timeout-ms = <30>;
+            timeout-ms = <70>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -470,13 +470,52 @@
             key-positions = <17 18>;
         };
 
-        combo_mkp_mb3 {
-            bindings = <&mkp MB3>;
-            key-positions = <51 58>;
-            layers = <0>;
+        combo_mkp_mb1_r {
+            bindings = <&mkp MB1>;
+            key-positions = <52 53>;
             timeout-ms = <170>;
             require-prior-idle-ms = <200>;
-            slow-release;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_mkp_mb2_r {
+            bindings = <&mkp MB2>;
+            key-positions = <52 51>;
+            timeout-ms = <170>;
+            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_mkp_mb3_r {
+            bindings = <&mkp MB3>;
+            key-positions = <51 50>;
+            timeout-ms = <170>;
+            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_mkp_mb1_l {
+            bindings = <&mkp MB1>;
+            key-positions = <57 56>;
+            timeout-ms = <170>;
+            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_mkp_mb2_l {
+            bindings = <&mkp MB2>;
+            key-positions = <57 58>;
+            timeout-ms = <170>;
+            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_mkp_mb3_l {
+            bindings = <&mkp MB3>;
+            key-positions = <59 58>;
+            timeout-ms = <170>;
+            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5>;
         };
     };
 
