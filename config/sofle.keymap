@@ -259,7 +259,7 @@
 
         combo_repeat_l {
             bindings = <&key_repeat>;
-            key-positions = <16 29>;
+            key-positions = <16 15>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -267,7 +267,7 @@
 
         combo_repeat_r {
             bindings = <&key_repeat>;
-            key-positions = <30 19>;
+            key-positions = <19 20>;
             slow-release;
             require-prior-idle-ms = <100>;
             timeout-ms = <30>;
@@ -323,7 +323,7 @@
 
         combo_excl {
             bindings = <&kp EXCL>;
-            key-positions = <41 40>;
+            key-positions = <40 41>;
             timeout-ms = <30>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -995,6 +995,26 @@
             #binding-cells = <0>;
             bindings = <&kp C_PP>, <&kp C_NEXT>, <&kp C_PREV>;
         };
+
+        mm_M_selectLine: mm_M_selectLine {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_M_SELECTLINE";
+            bindings =
+                <&macro_select_line_finish_end>,
+                <&macro_select_line_finish_home>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        mm_M_nextLine_prevLine: mm_M_nextLine_prevLine {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_M_NEXTLINE_PREVLINE";
+            bindings = <&macro_select_next_line>, <&macro_select_prev_line>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
     };
 
     keymap {
@@ -1003,11 +1023,11 @@
         layer_base_hrm {
             display-name = "base-hrm";
             bindings = <
-&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)        &kp LS(N3)                      &kp LS(N4)      &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)      &kp LS(N8)                     &kp UNDER                &kp BSLH       &ht_capw CAPS 0
-&kp TAB              &kp Q          &kp W                    &kp F                           &kp P           &kp G                                &kp J        &kp L           &kp U                          &kp Y                    &kp SEMI       &kt LS(LCTRL)
-&kp BSPC             &hrm_l LGUI A  &hrm_l LALT R            &hrm_l LCTRL S                  &hrm_l LSHFT T  &kp D                                &kp H        &hrm_r RSHFT N  &hrm_r RCTRL E                 &hrm_r RALT I            &hrm_r RGUI O  &kp APOS
-&kp PG_UP            &kp Z          &kp X                    &kp C                           &kp V           &kp B        &kt LSHFT    &kt LCTRL  &kp K        &kp M           &kp COMMA                      &kp DOT                  &kp FSLH       &kp PG_DN
-                                    &macro_select_prev_line  &macro_select_line_finish_home  &mkp MB1        &lt 5 ENTER  &lt 2 DEL    &lt 2 TAB  &lt 5 SPACE  &mkp MB2        &macro_select_line_finish_end  &macro_select_next_line
+&ht_kp_kp GRAVE ESC  &kp LS(N1)     &email_1 0 LS(N2)  &kp LS(N3)      &kp LS(N4)      &kp LS(N5)                           &kp LS(N6)   &kp LS(N7)      &kp LS(N8)        &kp UNDER                &kp BSLH       &ht_capw CAPS 0
+&kp TAB              &kp Q          &kp W              &kp F           &kp P           &kp G                                &kp J        &kp L           &kp U             &kp Y                    &kp SEMI       &kt LS(LCTRL)
+&kp BSPC             &hrm_l LGUI A  &hrm_l LALT R      &hrm_l LCTRL S  &hrm_l LSHFT T  &kp D                                &kp H        &hrm_r RSHFT N  &hrm_r RCTRL E    &hrm_r RALT I            &hrm_r RGUI O  &kp APOS
+&kp PG_UP            &kp Z          &kp X              &kp C           &kp V           &kp B        &kt LSHFT    &kt LCTRL  &kp K        &kp M           &kp COMMA         &kp DOT                  &kp FSLH       &kp PG_DN
+                                    &mkp MB3           &mkp MB2        &mkp MB1        &lt 5 ENTER  &lt 2 DEL    &lt 2 TAB  &lt 5 SPACE  &kp LALT        &mm_M_selectLine  &mm_M_nextLine_prevLine
             >;
 
             sensor-bindings =
